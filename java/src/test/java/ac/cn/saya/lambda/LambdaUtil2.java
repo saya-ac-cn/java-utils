@@ -158,4 +158,18 @@ public class LambdaUtil2 {
         System.out.println(com2.compare(14,12) > 0 ? ">=" : '<');
     }
 
+    /**
+     * @描述 调用自己的函数式接口
+     * @参数  []
+     * @返回值  void
+     * @创建人  saya.ac.cn-刘能凯
+     * @创建时间  2019-05-02
+     * @修改人和其它信息
+     */
+    @Test
+    public void test7(){
+        IPrint print = (s) -> System.out.println(s);
+        print.print("diy functionInterface");
+    }
+
 }
