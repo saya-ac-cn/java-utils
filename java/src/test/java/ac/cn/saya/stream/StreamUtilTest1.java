@@ -3,6 +3,7 @@ package ac.cn.saya.stream;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -43,6 +44,15 @@ public class StreamUtilTest1 {
 
         // distinct -- 筛选，通过流所生成元素的hashCode（）和equals()去除重复元素
         list.stream().distinct().forEach(System.out::println);
+
+    }
+
+    @Test
+    public void test2(){
+        List<String> list = Arrays.asList("as","adf","afguiuoi","io");
+        list.stream().map(str -> str.toUpperCase()).forEach(System.out::println);
+
+        list.stream().filter(str -> str.length() > 3).forEach(System.out::println);
 
     }
 
