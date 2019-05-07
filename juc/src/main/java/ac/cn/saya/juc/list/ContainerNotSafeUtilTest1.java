@@ -1,7 +1,9 @@
 package ac.cn.saya.juc.list;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
  * @Title: ContainerNotSafeUtilTest1
@@ -15,6 +17,32 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ContainerNotSafeUtilTest1 {
 
     public static void main(String[] args) {
+        Map<String,String> list = new HashMap<>();
+        //Map<String,String> list = Collections.synchronizedMap(new HashMap<>());
+        //Map<String,String> list = new ConcurrentHashMap<>();
+        for (int i = 0; i < 30; i++) {
+            new Thread(() -> {
+                list.put(Thread.currentThread().getName(),UUID.randomUUID().toString().substring(0, 8));
+                System.out.println(list);
+            }).start();
+        }
+    }
+
+
+
+    public static void setNotSafe(String[] args) {
+        Set<String> list = new HashSet<String>();
+        //Set<String> list = Collections.synchronizedSet(new HashSet<String>());
+        //Set<String> list = new CopyOnWriteArraySet<>();
+        for (int i = 0; i < 30; i++) {
+            new Thread(() -> {
+                list.add(UUID.randomUUID().toString().substring(0, 8));
+                System.out.println(list);
+            }).start();
+        }
+    }
+
+    public static void listNotSafe(String[] args) {
         List<String> list = new ArrayList<String>();
         // List<String> list = new Vector<>();
         // List<String> list = Collections.synchronizedList(new ArrayList<String>());
@@ -26,6 +54,7 @@ public class ContainerNotSafeUtilTest1 {
             }).start();
         }
     }
+
     /**
      * 故障现象：java.util.ConcurrentModificationException
      *
