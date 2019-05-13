@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b6e9407-e328-475f-b3c9-c03e11c62473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/list/TransFerTestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReenterLockUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/SemaphoreUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/queue/SynchronouaQueueUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/CountDownLatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/CountDownLatchTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -71,34 +70,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReenterLockUtilTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/SemaphoreUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="255">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#1175#1176#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/util/concurrent/CopyOnWriteArrayList.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/queue/SynchronouaQueueUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5490">
-              <caret line="433" selection-start-line="433" selection-end-line="446" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/JucApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="465">
+              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,6 +108,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>add</find>
+      <find>static</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -135,13 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/juc/settings.gradle" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/jdbc/build.gradle" />
-        <option value="$PROJECT_DIR$/juc/build.gradle" />
-        <option value="$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/JdbcApplication.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/juc/README.md" />
         <option value="$PROJECT_DIR$/jdbc/README.md" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/VolatileUtil1.java" />
@@ -182,10 +164,17 @@
         <option value="$PROJECT_DIR$/reflect/build.gradle" />
         <option value="$PROJECT_DIR$/java/build.gradle" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/single/DCLTest.java" />
-        <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/list/ContainerNotSafeUtilTest1.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/list/TransFerTestUtil.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReenterLockUtilTest.java" />
+        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/SpinLockUtilTest.java" />
+        <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" />
+        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReadWriteLockUtilTest.java" />
+        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/CountDownLatch.java" />
+        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/CountDownLatchUtilTest.java" />
+        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/CyclicBarrierUtilTest.java" />
+        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/SemaphoreUtilTest.java" />
+        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/queue/SynchronouaQueueUtilTest.java" />
       </list>
     </option>
   </component>
@@ -198,9 +187,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
-    <option name="y" value="42" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="709" />
+    <option name="y" value="82" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
   </component>
@@ -209,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,7 +285,7 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="saya" type="462c0819:PsiDirectoryNode" />
               <item name="juc" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
+              <item name="volatiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
@@ -306,7 +296,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -314,7 +303,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="186" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557325017414" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557758250992" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -346,7 +335,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReenterLockUtilTest">
+  <component name="RunManager" selected="Application.SynchronouaQueueUtilTest">
     <configuration default="true" type="Application" factoryName="应用程序">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -367,21 +356,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerNotSafeUtilTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.list.ContainerNotSafeUtilTest1" />
-      <module name="ac.cn.saya.juc.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.juc.list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReenterLockUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.ReenterLockUtilTest" />
+    <configuration name="CountDownLatchUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.CountDownLatchUtilTest" />
       <module name="ac.cn.saya.juc.main" />
       <extension name="coverage">
         <pattern>
@@ -393,12 +369,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransFerTestUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.list.TransFerTestUtil" />
+    <configuration name="CyclicBarrierUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.CyclicBarrierUtilTest" />
       <module name="ac.cn.saya.juc.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ac.cn.saya.juc.list.*" />
+          <option name="PATTERN" value="ac.cn.saya.juc.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -406,36 +382,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamUtilTest1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ac.cn.saya.java.test" />
+    <configuration name="ReadWriteLockUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.ReadWriteLockUtilTest" />
+      <module name="ac.cn.saya.juc.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ac.cn.saya.stream.*" />
+          <option name="PATTERN" value="ac.cn.saya.juc.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ac.cn.saya.stream" />
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.stream.StreamUtilTest1" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamUtilTest1.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ac.cn.saya.java.test" />
+    <configuration name="SemaphoreUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.SemaphoreUtilTest" />
+      <module name="ac.cn.saya.juc.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ac.cn.saya.stream.*" />
+          <option name="PATTERN" value="ac.cn.saya.juc.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ac.cn.saya.stream" />
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.stream.StreamUtilTest1" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronouaQueueUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.queue.SynchronouaQueueUtilTest" />
+      <module name="ac.cn.saya.juc.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ac.cn.saya.juc.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -480,11 +461,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReenterLockUtilTest" />
-        <item itemvalue="Application.TransFerTestUtil" />
-        <item itemvalue="Application.ContainerNotSafeUtilTest1" />
-        <item itemvalue="JUnit.StreamUtilTest1.test2" />
-        <item itemvalue="JUnit.StreamUtilTest1.test1" />
+        <item itemvalue="Application.SynchronouaQueueUtilTest" />
+        <item itemvalue="Application.SemaphoreUtilTest" />
+        <item itemvalue="Application.CyclicBarrierUtilTest" />
+        <item itemvalue="Application.CountDownLatchUtilTest" />
+        <item itemvalue="Application.ReadWriteLockUtilTest" />
       </list>
     </recent_temporary>
   </component>
@@ -519,7 +500,12 @@
       <workItem from="1557069548202" duration="69000" />
       <workItem from="1557149192076" duration="3482000" />
       <workItem from="1557230247108" duration="2158000" />
-      <workItem from="1557323369971" duration="1430000" />
+      <workItem from="1557323369971" duration="2005000" />
+      <workItem from="1557407815738" duration="1954000" />
+      <workItem from="1557588424082" duration="91000" />
+      <workItem from="1557650043259" duration="4293000" />
+      <workItem from="1557655460143" duration="20000" />
+      <workItem from="1557756870585" duration="584000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目readme文件">
       <created>1555768396870</created>
@@ -626,7 +612,35 @@
       <option name="project" value="LOCAL" />
       <updated>1557235881464</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="增加传值和传址实例">
+      <created>1557325068717</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1557325068718</updated>
+    </task>
+    <task id="LOCAL-00017" summary="增加可重入锁实例">
+      <created>1557414367761</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1557414367761</updated>
+    </task>
+    <task id="LOCAL-00018" summary="增加自旋锁">
+      <created>1557588501136</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1557588501136</updated>
+    </task>
+    <task id="LOCAL-00019" summary="增加倒计数、集齐函数">
+      <created>1557654916330</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1557654916330</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -662,12 +676,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52198000" />
+    <option name="totallyTimeSpent" value="59715000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="42" width="1440" height="793" extended-state="0" />
+    <frame x="709" y="82" width="1440" height="793" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34978542" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.369814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -675,8 +690,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3281027" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3281027" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -756,68 +771,13 @@
     <MESSAGE value="增加Stream测试单元2" />
     <MESSAGE value="增加List线程不安全举例以及规避" />
     <MESSAGE value="增加Set和hashMap线程不安全举例以及规避" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加Set和hashMap线程不安全举例以及规避" />
+    <MESSAGE value="增加传值和传址实例" />
+    <MESSAGE value="增加可重入锁实例" />
+    <MESSAGE value="增加自旋锁" />
+    <MESSAGE value="增加倒计数、集齐函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加倒计数、集齐函数" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/callable/CallableUtil1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProductAndConsumerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProductAndConsumerByLockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReadWriteLockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/PrintABCTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/IpList.java" />
     <entry file="file://$PROJECT_DIR$/jdbc/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -856,13 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/CountDownLatchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1104,16 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/util/Hashtable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-441">
@@ -1128,6 +1071,17 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#915#923#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/list/TransFerTestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="44" />
+          <folding>
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1149,25 +1103,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/list/TransFerTestUtil.java">
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReenterLockUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="44" />
+        <state relative-caret-position="142">
+          <caret line="60" column="44" lean-forward="true" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="44" />
           <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReenterLockUtilTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="4665">
+          <caret line="345" column="3" selection-start-line="345" selection-start-column="3" selection-end-line="345" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1175#1176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/SpinLockUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReadWriteLockUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/CountDownLatchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/CountDownLatchUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/CyclicBarrierUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/SemaphoreUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/queue/SynchronouaQueueUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

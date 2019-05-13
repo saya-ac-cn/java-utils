@@ -9,7 +9,7 @@ import java.util.concurrent.CountDownLatch;
  * @Author liunengkai
  * @Date: 2019-04-21 15:31
  * @Description:闭锁
- * CountDownLatch：闭锁，在完成某些运算时，只有其他所有的线程运损全部完成，当前运算在继续执行
+ * CountDownLatchUtilTest：闭锁，在完成某些运算时，只有其他所有的线程运损全部完成，当前运算在继续执行
  */
 
 public class CountDownLatchTest {
