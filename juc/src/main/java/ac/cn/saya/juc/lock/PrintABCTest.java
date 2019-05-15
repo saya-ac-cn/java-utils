@@ -65,7 +65,7 @@ class PrintABC{
             for (int i = 1; i <= 5; i++){
                 System.out.println(Thread.currentThread().getName()+"\t"+ i + "\t" + totalLoop);
             }
-            // 3、唤醒,让B打印
+            // 3、通知唤醒,让B打印
             number = "B";
             conditionB.signal();
         }catch (Exception e){

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b6e9407-e328-475f-b3c9-c03e11c62473" name="Default Changelist" comment="增加信号量类">
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProdConsumerBlockQueueUtilTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProdConsumerTraditionTestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/queue/SynchronouaQueueUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/PrintABCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/PrintABCTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -85,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/queue/SynchronouaQueueUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="43" />
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,10 +96,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProdConsumerTraditionTestUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="314">
+              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/PrintABCTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProdConsumerBlockQueueUtilTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1950#1951#0" expanded="true" />
+                <element signature="e#1983#1984#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/VolatileUtil1.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/AtomicTest.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/CompareAndSwapTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -144,7 +166,6 @@
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/LockUtil1.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProductAndConsumerTest.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProductAndConsumerByLockTest.java" />
-        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/PrintABCTest.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReadWriteLockTest.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/ThreadPoolTest.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/IpList.java" />
@@ -186,6 +207,8 @@
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/queue/SynchronouaQueueUtilTest.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/dao/MemberMappin.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProdConsumerTraditionTestUtil.java" />
+        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/PrintABCTest.java" />
+        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProdConsumerBlockQueueUtilTest.java" />
       </list>
     </option>
   </component>
@@ -199,8 +222,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="577" />
-    <option name="y" value="117" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
   </component>
@@ -209,8 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,19 +322,49 @@
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="saya" type="462c0819:PsiDirectoryNode" />
+              <item name="juc" type="462c0819:PsiDirectoryNode" />
+              <item name="lock" type="462c0819:PsiDirectoryNode" />
+              <item name="ProdConsumerBlockQueueUtilTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="saya" type="462c0819:PsiDirectoryNode" />
+              <item name="juc" type="462c0819:PsiDirectoryNode" />
+              <item name="lock" type="462c0819:PsiDirectoryNode" />
+              <item name="ProdConsumerTraditionTestUtil.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="reflect" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="186" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557845741266" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557927015979" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -346,7 +396,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProdConsumerTraditionTestUtil">
+  <component name="RunManager" selected="Application.ProdConsumerBlockQueueUtilTest">
     <configuration default="true" type="Application" factoryName="应用程序">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -367,8 +417,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountDownLatchUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.CountDownLatchUtilTest" />
+    <configuration name="CyclicBarrierUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.CyclicBarrierUtilTest" />
       <module name="ac.cn.saya.juc.main" />
       <extension name="coverage">
         <pattern>
@@ -380,8 +430,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CyclicBarrierUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.CyclicBarrierUtilTest" />
+    <configuration name="ProdConsumerBlockQueueUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.ProdConsumerBlockQueueUtilTest" />
       <module name="ac.cn.saya.juc.main" />
       <extension name="coverage">
         <pattern>
@@ -472,11 +522,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProdConsumerBlockQueueUtilTest" />
         <item itemvalue="Application.ProdConsumerTraditionTestUtil" />
         <item itemvalue="Application.SynchronouaQueueUtilTest" />
         <item itemvalue="Application.SemaphoreUtilTest" />
         <item itemvalue="Application.CyclicBarrierUtilTest" />
-        <item itemvalue="Application.CountDownLatchUtilTest" />
       </list>
     </recent_temporary>
   </component>
@@ -517,7 +567,8 @@
       <workItem from="1557650043259" duration="4293000" />
       <workItem from="1557655460143" duration="20000" />
       <workItem from="1557756870585" duration="840000" />
-      <workItem from="1557843188904" duration="1759000" />
+      <workItem from="1557843188904" duration="2269000" />
+      <workItem from="1557921161129" duration="1870000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目readme文件">
       <created>1555768396870</created>
@@ -659,7 +710,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557758307302</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="增加阻塞队列">
+      <created>1557845775316</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1557845775317</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -695,12 +753,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61730000" />
+    <option name="totallyTimeSpent" value="64110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="793" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3748212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37982833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -794,26 +852,11 @@
     <MESSAGE value="增加自旋锁" />
     <MESSAGE value="增加倒计数、集齐函数" />
     <MESSAGE value="增加信号量类" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加信号量类" />
+    <MESSAGE value="增加阻塞队列" />
+    <MESSAGE value="增加线程交替打印" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加线程交替打印" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/LockUtil1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/AtomicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/VolatileUtil1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1176,6 +1219,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/dao/MemberMappin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/SemaphoreUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1186,27 +1236,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/dao/MemberMappin.java">
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/PrintABCTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="975">
+          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/queue/SynchronouaQueueUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="43" />
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProdConsumerBlockQueueUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1950#1951#0" expanded="true" />
+            <element signature="e#1983#1984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProdConsumerTraditionTestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="314">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
