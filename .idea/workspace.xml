@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b6e9407-e328-475f-b3c9-c03e11c62473" name="Default Changelist" comment="增加信号量类">
-      <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/DeadLockUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io/src/main/java/ac/cn/saya/nio/BufferUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io/src/main/java/ac/cn/saya/nio/ChannelUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/MyThreadPoolTestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/MyThreadPoolTestUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -71,17 +71,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/MyThreadPoolTestUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="240">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/DeadLockUtilTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="57" column="43" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/DeadLockUtilTest.java">
+        <entry file="file://$PROJECT_DIR$/io/src/main/java/ac/cn/saya/nio/ChannelUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="61" column="56" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
+            <state relative-caret-position="475">
+              <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,8 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/volatiles/CountDownLatchTest.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/callable/CallableUtil1.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/LockUtil1.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProductAndConsumerTest.java" />
@@ -167,6 +177,8 @@
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ProdConsumerBlockQueueUtilTest.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/MyThreadPoolTestUtils.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/DeadLockUtilTest.java" />
+        <option value="$PROJECT_DIR$/io/src/main/java/ac/cn/saya/nio/BufferUtilTest.java" />
+        <option value="$PROJECT_DIR$/io/src/main/java/ac/cn/saya/nio/ChannelUtilTest.java" />
       </list>
     </option>
   </component>
@@ -180,8 +192,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="466" />
-    <option name="y" value="23" />
+    <option name="y" value="202" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
   </component>
@@ -200,83 +211,89 @@
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ac" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ac" type="462c0819:PsiDirectoryNode" />
               <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="saya" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ac" type="462c0819:PsiDirectoryNode" />
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="saya" type="462c0819:PsiDirectoryNode" />
-              <item name="juc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="juc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ac" type="462c0819:PsiDirectoryNode" />
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="saya" type="462c0819:PsiDirectoryNode" />
-              <item name="juc" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
+              <item name="bio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="saya" type="462c0819:PsiDirectoryNode" />
+              <item name="nio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="io" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
@@ -287,8 +304,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,7 +313,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="186" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558277433080" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558446278366" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -329,7 +346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DeadLockUtilTest">
+  <component name="RunManager" selected="Application.BufferUtilTest">
     <configuration default="true" type="Application" factoryName="应用程序">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -346,6 +363,19 @@
     </configuration>
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BufferUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.nio.BufferUtilTest" />
+      <module name="ac.cn.saya.io.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ac.cn.saya.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -402,19 +432,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronouaQueueUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.queue.SynchronouaQueueUtilTest" />
-      <module name="ac.cn.saya.juc.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.juc.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -455,11 +472,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BufferUtilTest" />
         <item itemvalue="Application.DeadLockUtilTest" />
         <item itemvalue="Application.MyThreadPoolTestUtils" />
         <item itemvalue="Application.ProdConsumerBlockQueueUtilTest" />
         <item itemvalue="Application.ProdConsumerTraditionTestUtil" />
-        <item itemvalue="Application.SynchronouaQueueUtilTest" />
       </list>
     </recent_temporary>
   </component>
@@ -505,7 +522,9 @@
       <workItem from="1557927473483" duration="904000" />
       <workItem from="1558015091412" duration="620000" />
       <workItem from="1558184505965" duration="1621000" />
-      <workItem from="1558275737824" duration="989000" />
+      <workItem from="1558275737824" duration="1790000" />
+      <workItem from="1558362123141" duration="1527000" />
+      <workItem from="1558444502087" duration="1594000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目readme文件">
       <created>1555768396870</created>
@@ -675,7 +694,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558187800247</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="增加手写线程池">
+      <created>1558277486297</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1558277486297</updated>
+    </task>
+    <task id="LOCAL-00026" summary="增加死锁示例">
+      <created>1558363637442</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1558363637442</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -711,12 +744,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68271000" />
+    <option name="totallyTimeSpent" value="72193000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1440" height="793" extended-state="6" />
+    <frame x="0" y="202" width="1440" height="793" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25894135" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26609442" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -732,7 +766,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.3281027" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.27532098" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.27532098" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -790,7 +824,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="初始化项目readme文件" />
     <MESSAGE value="完成cas算法" />
     <MESSAGE value="完成juc" />
     <MESSAGE value="提交文件" />
@@ -814,26 +847,11 @@
     <MESSAGE value="增加线程交替打印" />
     <MESSAGE value="增加juc综合运用" />
     <MESSAGE value="增加线程池创建实例" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加线程池创建实例" />
+    <MESSAGE value="增加手写线程池" />
+    <MESSAGE value="增加死锁示例" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加死锁示例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/ThreadPoolTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/io/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/io/src/main/java/ac/cn/saya/bio/StartIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1218,15 +1236,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/MyThreadPoolTestUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="240">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io/src/main/java/ac/cn/saya/nio/BufferUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/DeadLockUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="61" column="56" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
+        <state relative-caret-position="339">
+          <caret line="57" column="43" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io/src/main/java/ac/cn/saya/nio/ChannelUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
