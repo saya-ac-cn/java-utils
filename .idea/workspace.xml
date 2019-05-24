@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b6e9407-e328-475f-b3c9-c03e11c62473" name="Default Changelist" comment="增加信号量类">
+      <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/compar/ComparableUtilsTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/compar/ComparatorUtilsTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/entity/CarEntity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/entity/CatEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/string/StringEqualUtil1Test.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/LockSupportUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -73,33 +74,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/MyThreadPoolTestUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/DeadLockUtilTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="43" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/io/src/main/java/ac/cn/saya/nio/ChannelUtilTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/compar/ComparableUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -126,17 +100,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/LockSupportUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
+            <state relative-caret-position="810">
               <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/string/StringEqualUtil1Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1295">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#961#962#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#1439#1440#0" expanded="true" />
+                <element signature="e#1465#1466#0" expanded="true" />
+                <element signature="e#1748#1749#0" expanded="true" />
+                <element signature="e#1778#1779#0" expanded="true" />
+                <element signature="e#2062#2063#0" expanded="true" />
+                <element signature="e#2094#2095#0" expanded="true" />
+                <element signature="e#2575#2576#0" expanded="true" />
+                <element signature="e#2615#2616#0" expanded="true" />
+                <element signature="e#6421#6422#0" expanded="true" />
+                <element signature="e#6463#6464#0" expanded="true" />
+                <element signature="e#9432#9433#0" expanded="true" />
+                <element signature="e#9462#9463#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding>
+                <element signature="e#376#385#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,10 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/IpList.java" />
-        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/IpListImpl.java" />
-        <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/ScheduledThreadPoolTest.java" />
-        <option value="$PROJECT_DIR$/io/src/main/java/ac/cn/saya/bio/StartIO.java" />
         <option value="$PROJECT_DIR$/io/build.gradle" />
         <option value="$PROJECT_DIR$/io/src/main/java/ac/cn/saya/bio/FileReaderTest.java" />
         <option value="$PROJECT_DIR$/io/out/production/classes/config.propertis" />
@@ -253,6 +264,10 @@
         <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/compar/ComparatorUtilsTest.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/LockSupportUtilsTest.java" />
         <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/string/StringEqualUtil1Test.java" />
+        <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVRTreeUtilTest.java" />
+        <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeUtilTest.java" />
+        <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeUtil.java" />
+        <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeTest.java" />
       </list>
     </option>
   </component>
@@ -266,7 +281,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="227" />
+    <option name="y" value="31" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
   </component>
@@ -275,6 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -348,13 +365,36 @@
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="saya" type="462c0819:PsiDirectoryNode" />
+              <item name="avl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="saya" type="462c0819:PsiDirectoryNode" />
+              <item name="compar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="reflect" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -363,7 +403,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="186" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558621887284" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558711338153" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -396,7 +436,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringEqualUtil1Test.test1">
+  <component name="RunManager" selected="JUnit.AVLTreeTest.test">
     <configuration default="true" type="Application" factoryName="应用程序">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -417,19 +457,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.nio.BufferUtilTest" />
-      <module name="ac.cn.saya.io.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.nio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LockSupportUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.lock.LockSupportUtilsTest" />
       <module name="ac.cn.saya.juc.main" />
@@ -443,16 +470,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparableUtilsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AVLTreeTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ac.cn.saya.java.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ac.cn.saya.compar.*" />
+          <option name="PATTERN" value="ac.cn.saya.avl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ac.cn.saya.compar" />
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.compar.ComparableUtilsTest" />
+      <option name="PACKAGE_NAME" value="ac.cn.saya.avl" />
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.avl.AVLTreeTest" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AVLTreeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ac.cn.saya.java.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ac.cn.saya.avl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ac.cn.saya.avl" />
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.avl.AVLTreeTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -464,7 +508,7 @@
       <module name="ac.cn.saya.java.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ac.cn.saya.compar.*" />
+          <option name="PATTERN" value="ac.cn.saya.avl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -534,11 +578,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AVLTreeTest.test" />
+        <item itemvalue="JUnit.AVLTreeTest.main" />
         <item itemvalue="JUnit.StringEqualUtil1Test.test1" />
         <item itemvalue="Application.LockSupportUtilsTest" />
         <item itemvalue="JUnit.ComparatorUtilsTest.test" />
-        <item itemvalue="JUnit.ComparableUtilsTest.test" />
-        <item itemvalue="Application.BufferUtilTest" />
       </list>
     </recent_temporary>
   </component>
@@ -588,7 +632,9 @@
       <workItem from="1558362123141" duration="1527000" />
       <workItem from="1558444502087" duration="4130000" />
       <workItem from="1558531895292" duration="1730000" />
-      <workItem from="1558617917258" duration="1267000" />
+      <workItem from="1558617917258" duration="1844000" />
+      <workItem from="1558624463915" duration="16000" />
+      <workItem from="1558705911263" duration="5249000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目readme文件">
       <created>1555768396870</created>
@@ -786,16 +832,17 @@
       <option name="project" value="LOCAL" />
       <updated>1558533385363</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="增加字符串比较">
+      <created>1558621921252</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1558621921267</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StreamUtilTest1_test2 - 2019.05.05 at 23h 17m 28s.xml">
-      <configuration name="StreamUtilTest1.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StreamUtilTest1_test2 - 2019.05.05 at 23h 17m 44s.xml">
-      <configuration name="StreamUtilTest1.test2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ComparableUtilsTest_test - 2019.05.21 at 22h 02m 44s.xml">
       <configuration name="ComparableUtilsTest.test" configurationId="JUnit" />
     </history-entry>
@@ -820,14 +867,20 @@
     <history-entry file="StringEqualUtil1Test_test1 - 2019.05.23 at 21h 48m 23s.xml">
       <configuration name="StringEqualUtil1Test.test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AVLTreeTest_main - 2019.05.24 at 23h 15m 51s.xml">
+      <configuration name="AVLTreeTest.main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AVLTreeTest_test - 2019.05.24 at 23h 16m 43s.xml">
+      <configuration name="AVLTreeTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77726000" />
+    <option name="totallyTimeSpent" value="83568000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="793" extended-state="0" />
+    <frame x="227" y="31" width="1440" height="793" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2732475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28040057" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -901,8 +954,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="提交文件" />
-    <MESSAGE value="字符流操作文件" />
     <MESSAGE value="字节流操作文件" />
     <MESSAGE value="增加tcp/udp实例" />
     <MESSAGE value="增加静态代理" />
@@ -926,39 +977,11 @@
     <MESSAGE value="增加死锁示例" />
     <MESSAGE value="增加NIO缓存区示例" />
     <MESSAGE value="增加管道示例" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加管道示例" />
+    <MESSAGE value="增加字符串比较" />
+    <MESSAGE value="增加Comparable和Comparator" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加Comparable和Comparator" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Internet/src/main/java/ac/cn/saya/udp/SocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Internet/src/main/java/ac/cn/saya/udp/SocketClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Internet/src/main/java/ac/cn/saya/tcp/SocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar!/java/util/WeakHashMap.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1298,6 +1321,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/LockSupportUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/entity/CatEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1323,17 +1353,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/LockSupportUtilsTest.java">
+    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/string/StringEqualUtil1Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/string/StringEqualUtil1Test.java">
+    <entry file="jar:///Library/gradle/repository/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/builders/JUnit4Builder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#376#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1295">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="true" />
+            <element signature="e#2615#2616#0" expanded="true" />
+            <element signature="e#6421#6422#0" expanded="true" />
+            <element signature="e#6463#6464#0" expanded="true" />
+            <element signature="e#9432#9433#0" expanded="true" />
+            <element signature="e#9462#9463#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
