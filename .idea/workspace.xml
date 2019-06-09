@@ -4,7 +4,7 @@
     <list default="true" id="8b6e9407-e328-475f-b3c9-c03e11c62473" name="Default Changelist" comment="增加信号量类">
       <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/SupplierUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/OperatorUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" afterDir="false" />
     </list>
@@ -84,11 +84,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/SupplierUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
+            <state relative-caret-position="225">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/ConsumerUtilTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="14" column="61" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/OperatorUtilTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="67" column="64" selection-start-line="67" selection-start-column="64" selection-end-line="67" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Internet/src/main/java/ac/cn/saya/tcp/SocketServer.java" />
         <option value="$PROJECT_DIR$/Internet/src/main/java/ac/cn/saya/tcp/SocketClient.java" />
         <option value="$PROJECT_DIR$/reflect/src/main/java/ac/cn/saya/reflect/staticproxy/Animal.java" />
         <option value="$PROJECT_DIR$/reflect/src/main/java/ac/cn/saya/reflect/staticproxy/Cat.java" />
@@ -178,6 +201,7 @@
         <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/PredicateUtilTest.java" />
         <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/FunctionUtilTest.java" />
         <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/SupplierUtilTest.java" />
+        <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/OperatorUtilTest.java" />
       </list>
     </option>
   </component>
@@ -196,7 +220,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="7" />
     <option name="y" value="47" />
     <option name="width" value="1440" />
@@ -207,6 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -291,7 +316,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,7 +323,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="186" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560002161517" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560092184472" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -332,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SupplierUtilTest.longSupplier">
+  <component name="RunManager" selected="JUnit.OperatorUtilTest.binaryOperator">
     <configuration default="true" type="Application" factoryName="应用程序">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -353,7 +377,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupplierUtilTest.booleanSupplier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperatorUtilTest.binaryOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ac.cn.saya.java.test" />
       <extension name="coverage">
         <pattern>
@@ -362,8 +386,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ac.cn.saya.func" />
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.func.SupplierUtilTest" />
-      <option name="METHOD_NAME" value="booleanSupplier" />
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.func.OperatorUtilTest" />
+      <option name="METHOD_NAME" value="binaryOperator" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperatorUtilTest.unaryOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ac.cn.saya.java.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ac.cn.saya.func.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ac.cn.saya.func" />
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.func.OperatorUtilTest" />
+      <option name="METHOD_NAME" value="unaryOperator" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -421,23 +462,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupplierUtilTest.supplier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ac.cn.saya.java.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.func.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ac.cn.saya.func" />
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.func.SupplierUtilTest" />
-      <option name="METHOD_NAME" value="supplier" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -478,11 +502,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OperatorUtilTest.binaryOperator" />
+        <item itemvalue="JUnit.OperatorUtilTest.unaryOperator" />
         <item itemvalue="JUnit.SupplierUtilTest.longSupplier" />
         <item itemvalue="JUnit.SupplierUtilTest.intSupplier" />
         <item itemvalue="JUnit.SupplierUtilTest.doubleSupplier" />
-        <item itemvalue="JUnit.SupplierUtilTest.booleanSupplier" />
-        <item itemvalue="JUnit.SupplierUtilTest.supplier" />
       </list>
     </recent_temporary>
   </component>
@@ -546,7 +570,8 @@
       <workItem from="1559653483078" duration="2748000" />
       <workItem from="1559740597487" duration="2020000" />
       <workItem from="1559915604950" duration="3760000" />
-      <workItem from="1560000653523" duration="1300000" />
+      <workItem from="1560000653523" duration="1601000" />
+      <workItem from="1560090519113" duration="1442000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目readme文件">
       <created>1555768396870</created>
@@ -800,49 +825,56 @@
       <option name="project" value="LOCAL" />
       <updated>1559919454684</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="增加Supplier-供应商">
+      <created>1560002177502</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1560002177503</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FunctionUtilTest_doubleFunction - 2019.06.07 at 22h 21m 00s.xml">
-      <configuration name="FunctionUtilTest.doubleFunction" configurationId="JUnit" />
+    <history-entry file="SupplierUtilTest_longSupplier - 2019.06.08 at 21h 55m 40s.xml">
+      <configuration name="SupplierUtilTest.longSupplier" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionUtilTest_toDoubleBiFunction - 2019.06.07 at 22h 25m 56s.xml">
-      <configuration name="FunctionUtilTest.toDoubleBiFunction" configurationId="JUnit" />
+    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 40m 53s.xml">
+      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionUtilTest_doubleToIntFunction - 2019.06.07 at 22h 46m 10s.xml">
-      <configuration name="FunctionUtilTest.doubleToIntFunction" configurationId="JUnit" />
+    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 43m 09s.xml">
+      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunctionUtilTest_toDoubleFunction - 2019.06.07 at 22h 55m 04s.xml">
-      <configuration name="FunctionUtilTest.toDoubleFunction" configurationId="JUnit" />
+    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 43m 37s.xml">
+      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SupplierUtilTest_supplier - 2019.06.08 at 21h 38m 09s.xml">
-      <configuration name="SupplierUtilTest.supplier" configurationId="JUnit" />
+    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 44m 24s.xml">
+      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SupplierUtilTest_booleanSupplier - 2019.06.08 at 21h 43m 12s.xml">
-      <configuration name="SupplierUtilTest.booleanSupplier" configurationId="JUnit" />
+    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 44m 44s.xml">
+      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SupplierUtilTest_booleanSupplier - 2019.06.08 at 21h 43m 19s.xml">
-      <configuration name="SupplierUtilTest.booleanSupplier" configurationId="JUnit" />
+    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 45m 24s.xml">
+      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SupplierUtilTest_booleanSupplier - 2019.06.08 at 21h 43m 43s.xml">
-      <configuration name="SupplierUtilTest.booleanSupplier" configurationId="JUnit" />
+    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 45m 52s.xml">
+      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SupplierUtilTest_booleanSupplier - 2019.06.08 at 21h 43m 50s.xml">
-      <configuration name="SupplierUtilTest.booleanSupplier" configurationId="JUnit" />
+    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 47m 34s.xml">
+      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SupplierUtilTest_doubleSupplier - 2019.06.08 at 21h 48m 15s.xml">
-      <configuration name="SupplierUtilTest.doubleSupplier" configurationId="JUnit" />
+    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 50m 13s.xml">
+      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114213000" />
+    <option name="totallyTimeSpent" value="115956000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="47" width="1440" height="793" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="793" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30543634" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30972818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -916,7 +948,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加Stream测试单元1" />
     <MESSAGE value="增加Stream测试单元2" />
     <MESSAGE value="增加List线程不安全举例以及规避" />
     <MESSAGE value="增加Set和hashMap线程不安全举例以及规避" />
@@ -941,7 +972,8 @@
     <MESSAGE value="增加Consumer-消费者函数式接口" />
     <MESSAGE value="增加Predicate函数接口" />
     <MESSAGE value="增加Function接口函数实例" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加Function接口函数实例" />
+    <MESSAGE value="增加Supplier-供应商" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加Supplier-供应商" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -960,13 +992,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/callable/CallableUtil1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1440,6 +1465,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/SupplierUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/ConsumerUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1450,10 +1485,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/SupplierUtilTest.java">
+    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/OperatorUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
+        <state relative-caret-position="290">
+          <caret line="67" column="64" selection-start-line="67" selection-start-column="64" selection-end-line="67" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
