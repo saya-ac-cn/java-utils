@@ -16,8 +16,7 @@ import java.util.concurrent.CountDownLatch;
 public class BatchInsertThread implements Runnable{
 
     private List<String> list;
-    private CountDownLatch begin;
-    private CountDownLatch end;
+    private CountDownLatch countDownLatch;
 
     /**
      * @描述 创建个构造函数初始化 list,和其他用到的参数
@@ -27,10 +26,9 @@ public class BatchInsertThread implements Runnable{
      * @创建时间  2019-06-12
      * @修改人和其它信息
      */
-    public BatchInsertThread(List<String> list, CountDownLatch begin, CountDownLatch end) {
+    public BatchInsertThread(List<String> list, CountDownLatch countDownLatch) {
         this.list = list;
-        this.begin = begin;
-        this.end = end;
+        this.countDownLatch = countDownLatch;
     }
 
     /**
@@ -47,20 +45,20 @@ public class BatchInsertThread implements Runnable{
     @Override
     public void run() {
         try {
-            for (int i = 0; i < list.size(); i++) {
-                //这里还要说一下，，由于在实质项目中，当处理的数据存在等待超时和出错会使线程一直处于等待状态
-                //这里只是处理简单的，
-                //分批 批量插入
-            }
+            if (null != list) {
+                System.out.println("执行一次批量插入");
+                for (int i = 0; i < list.size(); i++) {
+                    //这里还要说一下，，由于在实质项目中，当处理的数据存在等待超时和出错会使线程一直处于等待状态
+                    //这里只是处理简单的，
+                    //分批 批量插入
 
-            //执行完让线程直接进入等待
-            begin.await();
-        } catch (InterruptedException e) {
+                }
+            }
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            //这里要主要了，当一个线程执行完 了计数要减一不然这个线程会被一直挂起
-            // ，end.countDown()，这个方法就是直接把计数器减一的
-            end.countDown();
+            // 发出线程任务完成的信号
+            countDownLatch.countDown();
         }
     }
 }
