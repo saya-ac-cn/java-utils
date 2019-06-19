@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b6e9407-e328-475f-b3c9-c03e11c62473" name="Default Changelist" comment="增加信号量类">
+    <list default="true" id="8b6e9407-e328-475f-b3c9-c03e11c62473" name="Default Changelist" comment="增加CountDownLatch+线程池批量添加数据示例">
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/tree/BinaryTreeUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/avl/AVLTreeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/stream/StreamUtilTest1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsertThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsertThread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -100,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsertThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+            <state relative-caret-position="168">
+              <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,10 +109,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/main/java/tree/BinaryTreeUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="247" column="22" lean-forward="true" selection-start-line="247" selection-start-column="22" selection-end-line="247" selection-end-column="22" />
+              <folding>
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#869#870#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="51" column="37" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="37" />
+            <state relative-caret-position="330">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/reflect/src/main/java/ac/cn/saya/reflect/staticproxy/Cat.java" />
         <option value="$PROJECT_DIR$/reflect/src/main/java/ac/cn/saya/reflect/staticproxy/CatProxy.java" />
         <option value="$PROJECT_DIR$/reflect/src/main/java/ac/cn/saya/reflect/staticproxy/StaticProxyTest.java" />
         <option value="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/swing/start.java" />
@@ -203,6 +230,7 @@
         <option value="$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/OperatorUtilTest.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsert.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsertThread.java" />
+        <option value="$PROJECT_DIR$/java/src/main/java/tree/BinaryTreeUtil.java" />
       </list>
     </option>
   </component>
@@ -222,7 +250,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="184" />
+    <option name="y" value="221" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
   </component>
@@ -231,7 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,90 +275,15 @@
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="saya" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="saya" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="saya" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
@@ -430,6 +383,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -438,7 +392,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="186" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560612531629" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560955396797" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -471,7 +425,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BatchInsert">
+  <component name="RunManager" selected="Application.BinaryTreeUtil">
     <configuration default="true" type="Application" factoryName="应用程序">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -505,6 +459,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BinaryTreeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.BinaryTreeUtil" />
+      <module name="ac.cn.saya.java.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="go build tree/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="ac.cn.saya.java.main" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$" />
+      <directory value="$PROJECT_DIR$/java/src/main/java/tree" />
+      <method v="2" />
+    </configuration>
     <configuration name="OperatorUtilTest.binaryOperator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ac.cn.saya.java.test" />
       <extension name="coverage">
@@ -533,40 +509,6 @@
       <option name="PACKAGE_NAME" value="ac.cn.saya.func" />
       <option name="MAIN_CLASS_NAME" value="ac.cn.saya.func.OperatorUtilTest" />
       <option name="METHOD_NAME" value="unaryOperator" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SupplierUtilTest.intSupplier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ac.cn.saya.java.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.func.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ac.cn.saya.func" />
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.func.SupplierUtilTest" />
-      <option name="METHOD_NAME" value="intSupplier" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SupplierUtilTest.longSupplier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ac.cn.saya.java.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.func.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ac.cn.saya.func" />
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.func.SupplierUtilTest" />
-      <option name="METHOD_NAME" value="longSupplier" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -613,11 +555,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinaryTreeUtil" />
+        <item itemvalue="Go Build.go build tree/" />
         <item itemvalue="Application.BatchInsert" />
         <item itemvalue="JUnit.OperatorUtilTest.binaryOperator" />
         <item itemvalue="JUnit.OperatorUtilTest.unaryOperator" />
-        <item itemvalue="JUnit.SupplierUtilTest.longSupplier" />
-        <item itemvalue="JUnit.SupplierUtilTest.intSupplier" />
       </list>
     </recent_temporary>
   </component>
@@ -686,7 +628,8 @@
       <workItem from="1560173458270" duration="704000" />
       <workItem from="1560262861086" duration="521000" />
       <workItem from="1560353645523" duration="2123000" />
-      <workItem from="1560606912395" duration="1090000" />
+      <workItem from="1560606912395" duration="1269000" />
+      <workItem from="1560950602298" duration="3005000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目readme文件">
       <created>1555768396870</created>
@@ -961,7 +904,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560354187660</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="增加CountDownLatch+线程池批量添加数据示例">
+      <created>1560612547940</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1560612547940</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -997,13 +947,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120626000" />
+    <option name="totallyTimeSpent" value="123810000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="793" extended-state="0" />
+    <frame x="261" y="124" width="1440" height="793" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32689556" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3311874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1077,7 +1027,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加Set和hashMap线程不安全举例以及规避" />
     <MESSAGE value="增加传值和传址实例" />
     <MESSAGE value="增加可重入锁实例" />
     <MESSAGE value="增加自旋锁" />
@@ -1102,7 +1051,8 @@
     <MESSAGE value="增加Supplier-供应商" />
     <MESSAGE value="增加Operator接口函数" />
     <MESSAGE value="增加批量添加线程" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加批量添加线程" />
+    <MESSAGE value="增加CountDownLatch+线程池批量添加数据示例" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加CountDownLatch+线程池批量添加数据示例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1121,13 +1071,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/LockSupportUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock/ReadWriteLockTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-56">
@@ -1570,16 +1513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/SupplierUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/pool/ThreadPoolTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1594,10 +1527,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsertThread.java">
+    <entry file="file://$PROJECT_DIR$/java/src/test/java/ac/cn/saya/func/SupplierUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        <state relative-caret-position="1215">
+          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1606,10 +1539,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="51" column="37" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="37" />
+        <state relative-caret-position="330">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/ac/cn/saya/jdbc/concurrent/BatchInsertThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/tree/BinaryTreeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="247" column="22" lean-forward="true" selection-start-line="247" selection-start-column="22" selection-end-line="247" selection-end-column="22" />
+          <folding>
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
           </folding>
         </state>
       </provider>
