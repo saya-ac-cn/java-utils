@@ -54,6 +54,29 @@ class ThreadedBinaryTree{
         this.root = root;
     }
 
+    //遍历线索化二叉树的方法
+    public void threadedList() {
+        //定义一个变量，存储当前遍历的结点，从 root 开始
+        TreeNode node = root;
+        while(node != null) {
+            //循环的找到 leftType == 1 的结点，第一个找到就是 8 结点
+            // 后面随着遍历而变化,因为当 leftType==1 时，说明该结点是按照线索化
+            // 处理后的有效结点
+            while(node.getLeftType() == 0) {
+                node = node.getLeft();
+            }
+            //打印当前这个结点
+            //如果当前结点的右指针指向的是后继结点,就一直输出
+            while(node.getRightType() == 1) {
+                //获取到当前结点的后继结点
+                node = node.getRight();
+                System.out.println(node);
+            }
+            //替换这个遍历的结点
+            node = node.getRight();
+        }
+    }
+
     //重载 threadedNodes 方法
     public void threadedNodes() {
         this.threadedNodes(root);
