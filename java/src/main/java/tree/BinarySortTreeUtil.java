@@ -34,6 +34,26 @@ class BinarySortTree {
         return root;
     }
 
+    /**
+     * @描述
+     /*1. 返回的 以 node 为根结点的二叉排序树的最小结点的值
+     *2. 删除 node 为根结点的二叉排序树的最小结点
+     * @参数 传入的结点(当做二叉排序树的根结点)
+     * @返回值  返回的 以 node 为根结点的二叉排序树的最小结点的值
+     * @创建人  saya.ac.cn-刘能凯
+     * @创建时间  2019-06-27
+     * @修改人和其它信息
+     */
+    public int findRightTreeMin(BinarySortTreeNode node){
+        BinarySortTreeNode target = node;
+        //循环的查找左子节点，就会找到最小值
+        while (target.getLeft() != null){
+            target = target.getLeft();
+        }
+        //这时 target 就指向了最小结点 //删除最小结点 delNode(target.value);
+        return target.getValue();
+    }
+
     //删除结点
     public void delNode(int value) {
         if (root == null){
@@ -61,6 +81,39 @@ class BinarySortTree {
                 }else if (parent.getRight() != null && parent.getRight().getValue() == value){
                     //是右子节点
                     parent.setRight(null);
+                }
+            }else if (targetNode.getLeft() != null && targetNode.getRight() != null){
+                //删除有两颗子树的节点
+                int mainVal = findRightTreeMin(targetNode.getRight());
+                targetNode.setValue(mainVal);
+            }else {
+                // 删除只有一颗子树的结点
+                //如果要删除的结点有左子结点
+                if (targetNode.getLeft() != null){
+                    if (parent != null){
+                        //如果 targetNode 是 parent 的左子结点
+                        if (parent.getLeft().getValue() == value){
+                            parent.setLeft(targetNode.getLeft());
+                        }else {
+                            // targetNode 是 parent 的右子结点
+                            parent.setRight(targetNode.getLeft());
+                        }
+                    }else {
+                        root = targetNode.getLeft();
+                    }
+                }else {
+                    // 如果要删除的结点有右子结点
+                    if (parent != null){
+                        //如果 targetNode 是 parent 的左子结点
+                        if (parent.getLeft().getValue() == value){
+                            parent.setLeft(targetNode.getRight());
+                        }else {
+                            //如果 targetNode 是 parent 的右子结点
+                            parent.setRight(targetNode.getRight());
+                        }
+                    }else {
+                        root = targetNode.getRight();
+                    }
                 }
             }
         }
