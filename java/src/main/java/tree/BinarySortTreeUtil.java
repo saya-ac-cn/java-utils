@@ -99,6 +99,7 @@ class BinarySortTree {
                             parent.setRight(targetNode.getLeft());
                         }
                     }else {
+                        // 删根节点
                         root = targetNode.getLeft();
                     }
                 }else {
@@ -112,6 +113,7 @@ class BinarySortTree {
                             parent.setRight(targetNode.getRight());
                         }
                     }else {
+                        // 删根节点
                         root = targetNode.getRight();
                     }
                 }
