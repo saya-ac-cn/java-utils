@@ -32,6 +32,7 @@ public class StreamUtilTest1 {
         list.add(6);
         // filter(Predicate p) --接收Lambda，从流中排出某些元素
         Stream<Integer> stream = list.stream();
+
         // 提取大于3的数据
         stream.filter(e -> e > 2).forEach(System.out::println);
         System.out.println("********************");
@@ -56,6 +57,12 @@ public class StreamUtilTest1 {
 
         list.stream().filter(str -> str.length() > 3).forEach(System.out::println);
 
+    }
+
+    @Test
+    public void test3(){
+        List<String> list = Arrays.asList("as","adf","afguiuoi","io");
+        list.stream().forEach(s -> System.out.println(s));
     }
 
 }
