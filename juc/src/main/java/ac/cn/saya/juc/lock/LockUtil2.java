@@ -1,5 +1,7 @@
 package ac.cn.saya.juc.lock;
 
+import org.springframework.objenesis.instantiator.sun.UnsafeFactoryInstantiator;
+
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -14,29 +16,27 @@ import java.util.concurrent.locks.ReentrantLock;
  * synchronized：隐式锁
  * 1、同步代码块
  * 2、同步方法
- * jdk 1.5后：
- * 3、同步锁Lock
- * 注意：lock是一个显示锁，需要通过locl()方法上锁，必须通过unlock()方式进行释放锁
+ * 使用内置对象锁手动加锁和解锁
  */
 
-public class LockUtil1 {
+public class LockUtil2 {
 
     public static void main(String[] args){
-        Ticket ticket = new Ticket();
+        Ticket2 ticket = new Ticket2();
         //new Thread(ticket,"1#").start();
         new Thread(ticket,"2#").start();
         new Thread(ticket,"3#").start();
     }
 }
 
-class Ticket implements Runnable{
+class Ticket2 implements Runnable{
     private int ticket = 10;
-    private Lock lock = new ReentrantLock();
+    private static Object object = new Object();
 
     @Override
     public void run() {
         while (ticket > 0){
-            lock.lock();
+            UnsafeInstance.reflectGetUnsafe().monitorEnter(object);
             try{
                 if(ticket > 0){
                     try{
@@ -47,7 +47,7 @@ class Ticket implements Runnable{
                     System.out.println(Thread.currentThread().getName()+" 完成售票，余票："+ --ticket);
                 }
             }finally {
-                lock.unlock();
+                UnsafeInstance.reflectGetUnsafe().monitorExit(object);
             }
         }
     }
