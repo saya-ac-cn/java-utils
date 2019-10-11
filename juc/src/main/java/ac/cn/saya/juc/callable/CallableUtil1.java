@@ -1,15 +1,18 @@
 package ac.cn.saya.juc.callable;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Title: CallableUtil1
- * @ProjectName java-utils
+ * @ProjectName juc
  * @Description: TODO
- * @Author liunengkai
- * @Date: 2019-04-21 15:56
+ * @Author Administrator
+ * @Date: 2019/10/11 0011 14:38
  * @Description:
  * 一、创建线程的方式三：实现Callable接口，相较于实现Runnable接口的方式，方法可以有返回值，可以抛出异常
  *
@@ -18,35 +21,30 @@ import java.util.concurrent.FutureTask;
 
 public class CallableUtil1 {
 
-    public static void main(String[] args){
-        CallableThread callableThread = new CallableThread();
-        // 1、执行Callable方式，需要有FutureTask实现类的支持，用于接收运算结果
-        FutureTask<Integer> result = new FutureTask<>(callableThread);
+    public static void main(String[] args) {
+        CallableUtil1Thead thead = new CallableUtil1Thead();
+        FutureTask<List<Integer>> result = new FutureTask<>(thead);
         new Thread(result).start();
-        // 2、接收运算结果
         try{
-            Integer sum = result.get();
+            System.out.println("list:\n"+result.get());
             System.out.println("-----------");
-            System.out.println(sum);
         }catch (InterruptedException | ExecutionException e){
             e.printStackTrace();
         }
     }
+
 }
 
-class CallableThread implements Callable<Integer>{
-    /**
-     * Computes a result, or throws an exception if unable to do so.
-     *
-     * @return computed result
-     * @throws Exception if unable to compute a result
-     */
+class CallableUtil1Thead implements Callable<List<Integer>>{
     @Override
-    public Integer call() throws Exception {
-        int sum = 0;
-        for (int i = 0; i <= 100; i++){
-            sum += i;
+    public List<Integer> call() throws Exception {
+        List longs = new ArrayList<>(10);
+        for (int i = 0; i < 10; i++) {
+            // 生产数据
+            longs.add((Math.random() * 10000));
+            // 模拟耗时1s
+            TimeUnit.SECONDS.sleep(1);
         }
-        return sum;
+        return longs;
     }
 }
