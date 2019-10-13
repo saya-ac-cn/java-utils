@@ -21,6 +21,7 @@ public class TransFerTestUtil {
     }
 
     public void changeValue3(String name){
+        System.out.println(System.identityHashCode(name));
         name = "xxx";
         System.out.println(System.identityHashCode(name));
     }
