@@ -15,8 +15,7 @@ import java.util.stream.LongStream;
  * @Description: TODO
  * @Author liunengkai
  * @Date: 2019-09-20 22:06
- * @Description:
- * CompletableFuture累计求和
+ * @Description: CompletableFuture累计求和
  */
 
 public class CompletableFutureUtil {
@@ -45,7 +44,8 @@ public class CompletableFutureUtil {
             int end = (i + 1) * thurshold - 1;
             // 如果最后一个线程的索引大于任务长度，则以任务长度为准
             end = end > numbers.length ? numbers.length - 1 : end;
-            list.add(CompletableFuture.supplyAsync(new FutureSumTask(numbers, start, end), threadPool));
+            // exceptionally 异常后的返回
+            list.add(CompletableFuture.supplyAsync(new FutureSumTask(numbers, start, end), threadPool).exceptionally(f -> 0L));
         }
         List<Long> rs = null;
         try {
@@ -82,6 +82,7 @@ class FutureSumTask implements Supplier<Long> {
         for (int i = start; i <= end; i++) {
             total += numbers[i];
         }
+        ///throw new NullPointerException();
         return total;
     }
 }
