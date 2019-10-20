@@ -1,4 +1,4 @@
-package ac.cn.saya.juc.lock;
+package ac.cn.saya.juc.unsafe;
 
 import sun.misc.Unsafe;
 

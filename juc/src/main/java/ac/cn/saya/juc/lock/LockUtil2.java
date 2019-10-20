@@ -1,9 +1,6 @@
 package ac.cn.saya.juc.lock;
 
-import org.springframework.objenesis.instantiator.sun.UnsafeFactoryInstantiator;
-
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import ac.cn.saya.juc.unsafe.UnsafeInstance;
 
 /**
  * @Title: LockUtil1
