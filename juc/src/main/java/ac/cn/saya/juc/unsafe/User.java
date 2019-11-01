@@ -13,9 +13,12 @@ public class User {
 
     private Integer id;
     private String name;
+    private String property;
 
-
-    public User() {
+    /**
+     * 构造方法私有化后，UnSafe依然能初始化
+     */
+    private User() {
     }
 
     public Integer getId() {
@@ -39,6 +42,7 @@ public class User {
         return "User【" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", property='" + property + '\'' +
                 ']';
     }
 }
