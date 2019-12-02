@@ -18,7 +18,7 @@ public class BuilderUtilTest {
         //准备创建房子的指挥者
         HouseDirector houseDirector = new HouseDirector(commonHouse);
         //完成盖房子，返回产品(普通房子)
-        House house = houseDirector.constructHouse();
+        houseDirector.constructHouse();
 
 
         System.out.println("--------------------------");
