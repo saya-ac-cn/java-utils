@@ -30,6 +30,7 @@ public class ObjectStructure {
     //显示测评情况
     public void display(Action action) {
         for (Person p : persons) {
+            System.out.println("-");
             p.accept(action);
         }
     }

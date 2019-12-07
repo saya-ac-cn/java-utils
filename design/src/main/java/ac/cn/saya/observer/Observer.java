@@ -7,7 +7,7 @@ package ac.cn.saya.observer;
  * @Author liunengkai
  * @Date: 2019-08-08 22:19
  * @Description:
- * 观察者接口，有观察者来实现
+ * 观察者接口，由观察者来实现
  */
 
 public interface Observer {
