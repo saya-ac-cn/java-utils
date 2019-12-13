@@ -17,7 +17,7 @@ public class InsertSort {
 
     @Test
     public void test(){
-        int arr[] = {3, 9, -1, 10, 20};
+        int arr[] = {11, 6, 8, 5, 4, 7, 2, 0, 3, 1, 12, 13, 14, 15, 16, 17, 18, 19, 20, 10, 9};
         System.out.println("排序前");
         System.out.println(Arrays.toString(arr));
         sort(arr);

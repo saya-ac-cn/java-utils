@@ -11,6 +11,7 @@ import java.util.Arrays;
  * @Author liunengkai
  * @Date: 2019-11-27 21:13
  * @Description:快速排序
+ * https://www.cnblogs.com/miracleswgm/p/9199124.html
  */
 
 public class QuickSort {
@@ -33,7 +34,7 @@ public class QuickSort {
     int partition_(int arr[], int left, int right){  //找基准数 划分
         int i = left + 1;
         int j = right;
-        int temp = arr[(left+right)/2];
+        int temp = arr[left];
 
         while (i <= j) {
             while (arr[i] < temp) {
