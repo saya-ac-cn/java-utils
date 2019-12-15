@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @Description: TODO
  * @Author liunengkai
  * @Date: 2019-12-13 21:00
- * @Description: 求一亿个数里面最小的10个数
+ * @Description: 题目：求一亿个数里面最小的10个数
  * 首先建立节点个数为10的最大堆，然后考虑每一个新的值，让他和堆顶比较，比堆顶大的元素直接抛弃，如果比堆顶小的数字，让他替换堆顶，然后调整堆。
  */
 public class MinTenNumber {
