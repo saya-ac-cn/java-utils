@@ -21,7 +21,7 @@ public class QuickSort {
         int arr[] = {3, 1, -1, 10, 20};
         System.out.println("排序前");
         System.out.println(Arrays.toString(arr));
-        quick_sort_(arr, 0, arr.length - 1);
+        quick_sort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -54,12 +54,12 @@ public class QuickSort {
 
     }
 
-    void quick_sort_(int arr[], int left, int right) {
+    void quick_sort(int arr[], int left, int right) {
         if (left > right)
             return;
         int j = partition_(arr, left, right);
-        quick_sort_(arr, left, j - 1);
-        quick_sort_(arr, j + 1, right);
+        quick_sort(arr, left, j - 1);
+        quick_sort(arr, j + 1, right);
     }
 
 }
