@@ -25,7 +25,7 @@ public class SemaphoreUtil2Test {
         int num = 8;
         // 客服数
         Semaphore semaphore = new Semaphore(5);
-        for (int i = 1; i <= 8; i++){
+        for (int i = 1; i <= num; i++){
             new SemaphoreBank(i,semaphore).start();
         }
     }

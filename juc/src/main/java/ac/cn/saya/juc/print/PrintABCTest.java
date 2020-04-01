@@ -1,4 +1,4 @@
-package ac.cn.saya.juc.lock;
+package ac.cn.saya.juc.print;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
