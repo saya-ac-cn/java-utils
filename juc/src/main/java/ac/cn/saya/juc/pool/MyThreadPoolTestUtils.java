@@ -17,10 +17,10 @@ public class MyThreadPoolTestUtils {
     public static void main(String[] args) {
         ExecutorService threadPool = new ThreadPoolExecutor(
                 2,
-                5,
+                3,
                 1L,
                 TimeUnit.SECONDS,
-                new LinkedBlockingDeque<>(3),
+                new LinkedBlockingDeque<>(2),
                 Executors.defaultThreadFactory(),
                 new ThreadPoolExecutor.DiscardPolicy());
         try{
