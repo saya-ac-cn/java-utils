@@ -21,7 +21,7 @@ public class SelectSort {
         int arr[] = {11, 6, 8, 5, 4, 7, 2, 0, 3, 1, 12, 13, 14, 15, 16, 17, 18, 19, 20, 10, 9};
         System.out.println("排序前");
         System.out.println(Arrays.toString(arr));
-        sort(arr);
+        sort2(arr);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -43,4 +43,23 @@ public class SelectSort {
             }
         }
     }
+
+    public static void sort2(int array[]){
+        for (int i = 0; i < array.length; i++) {
+            int maxValue = array[i];
+            int maxIndex = i;
+            for (int j = i+1; j < array.length; j++) {
+                if (maxValue < array[j]){
+                    maxIndex = j;
+                    maxValue = array[maxIndex];
+                }
+            }
+            if (maxIndex != i){
+                int temp = array[i];
+                array[i] = maxValue;
+                array[maxIndex] = temp;
+            }
+        }
+    }
+
 }

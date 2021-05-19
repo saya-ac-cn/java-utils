@@ -44,4 +44,46 @@ public class ShellSort {
         }
     }
 
+    // 冒泡法
+    public static void sort3(int array[]){
+        int temp = 0;
+        int count = 0;
+        for (int gap = array.length/2; gap > 0; gap = gap/2) {
+            // 第一个循环为段数（步长）的递减循环，从总数的1半，递减到1
+            for (int i = gap; i < array.length ; i++) {
+                // 第二个循环为遍历每一个段
+                for (int j = i -gap; j >= 0 ; j = j -gap) {
+                    // 段内排序
+                    if (array[j]<array[j+gap]){
+                        temp = array[j];
+                        array[j] = array[j+gap];
+                        array[j+gap] = temp;
+                    }
+                }
+            }
+            System.out.println(String.format("第%d轮排序，排序后：%s",count++,Arrays.toString(array)));
+        }
+    }
+
+    // 插入法
+    public static void sort2(int array[]){
+        int count = 0;
+        for (int gap = array.length/2; gap > 0; gap = gap/2) {
+            // 第一个循环为段数（步长）的递减循环，从总数的1半，递减到1
+            for (int i = gap; i < array.length ; i++) {
+                // 第二个循环为遍历每一个段
+                int value = array[i];
+                int index = i;
+                while (index-gap >= 0 && array[index-gap]<value){
+                    array[index] = array[index-gap];
+                    index-=gap;
+                }
+                if (index!=gap){
+                    array[index] = value;
+                }
+            }
+            System.out.println(String.format("第%d轮排序，排序后：%s",count++,Arrays.toString(array)));
+        }
+    }
+
 }

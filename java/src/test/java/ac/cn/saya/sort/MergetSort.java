@@ -15,50 +15,80 @@ import java.util.Arrays;
 
 public class MergetSort {
 
-    @Test
-    public void test() {
-        int arr[] = {11, 6, 8, 5, 4, 7, 2, 0, 3, 1, 12, 13, 14, 15, 16, 17, 18, 19, 20, 10, 9};
-        System.out.println("排序前");
-        System.out.println(Arrays.toString(arr));
-        sort(arr, 0, arr.length - 1);
-        System.out.println(Arrays.toString(arr));
+    public static void main(String[] args) {
+        int array[] = {123,24,36,54,675,9,34325,235,43,654,7};
+        System.out.println("排序前：");
+        System.out.println(Arrays.toString(array));
+        int[] temp = new int[array.length];
+        sort(array,0,array.length-1,temp);
+        System.out.println("排序后：");
+        System.out.println(Arrays.toString(array));
     }
 
-    public static void sort(int[] arry, int left, int right) {
-        if (left == right) {
-            return;
+    public static void sort(int[] array,int left,int right,int[] temp){
+        if (left < right){
+            // 以中间为基准，进行左右划分
+            int middle = (left + right) / 2;
+            // 向左、右进行分解
+            sort(array,left,middle,temp);
+            System.out.println("左边");
+            sort(array,middle+1,right,temp);
+            // 合并
+            merge(array,left,middle,right,temp);
         }
-        //中间索引
-        int mid = left + ((right - left) >> 1);
-        //向左递归进行分解
-        sort(arry, left, mid);
-        //向右递归进行分解
-        sort(arry, mid + 1, right);
-        //合并
-        merge(arry, left, mid, right);
     }
 
-    public static void merge(int[] arry, int left, int mid, int right) {
-        int[] temp = new int[right - left + 1];
-        int i = 0;
-        int minIndex = left;
-        int maxIndex = mid + 1;
-        // 比较左右两部分的元素，那个小，就把元素填入temp中
-        while (minIndex <= mid && maxIndex <= right) {
-            temp[i++] = arry[minIndex] < arry[maxIndex] ? arry[minIndex++] : arry[maxIndex++];
+    /**
+     * 合并方法
+     * @param array 排序的原始数组
+     * @param left 左边有序序列的初始索引
+     * @param middle 中间索引
+     * @param right 右边有序序列的初始索引
+     * @param temp 中转临时数组
+     */
+    public static void merge(int[] array,int left,int middle,int right,int[] temp){
+        // 左边有序序列的初始索引
+        int i =left;
+        // 右边有序数组的初始索引
+        int j = middle + 1;
+        // 指示temp数组的索引
+        int t = 0;
+        // 先把左右两边有序的数据进行两两比较，并填充到temp数组
+        // 直到有一边处理完毕为止
+        while (i <= middle && j <= right){
+            if (array[i] >= array[j]){
+                // 如果左边的有序序列的当前元素，大于右边的有序序列的当前元素
+                // 将左边的当前元素填充到temp数组，并移动下标
+                temp[t] = array[i];
+                t += 1;
+                i += 1;
+            }else {
+                // 反之
+                temp[t] = array[j];
+                t += 1;
+                j += 1;
+            }
         }
-        // 上面的循环退出后，把剩余的元素依次填入到temp中
-        // 以下两个while只有一个会执行
-        while (minIndex <= mid) {
-            temp[i++] = arry[minIndex++];
+        // 将余留的数据填入到temp
+        while (i <= middle){
+            temp[t] = array[i];
+            t += 1;
+            i += 1;
         }
-        while (maxIndex <= right) {
-            temp[i++] = arry[maxIndex++];
+        while (j <= right){
+            temp[t] = array[j];
+            t += 1;
+            j += 1;
         }
-        // 把最终的排序的结果复制给原数组
-        for (i = 0; i < temp.length; i++) {
-            arry[left + i] = temp[i];
+        // 将temp数组的元素复制到array
+        t = 0;
+        int tempLeft = left;
+        while (tempLeft <= right){
+            array[tempLeft] = temp[t];
+            t += 1;
+            tempLeft += 1;
         }
+        System.out.println(Arrays.toString(temp));
     }
 
 }
