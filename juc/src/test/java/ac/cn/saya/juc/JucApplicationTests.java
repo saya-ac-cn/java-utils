@@ -13,4 +13,15 @@ public class JucApplicationTests {
     public void contextLoads() {
     }
 
+    public void printA(String a){
+        a = "6666";
+    }
+
+    @Test
+    public void main(){
+        String a = "abc";
+        printA(a);
+        System.out.println(a);
+    }
+
 }
