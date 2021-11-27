@@ -1,7 +1,5 @@
 package ac.cn.saya.juc.lock;
 
-import ac.cn.saya.juc.unsafe.UnsafeInstance;
-
 /**
  * @Title: LockUtil1
  * @ProjectName java-utils
@@ -32,20 +30,20 @@ class Ticket2 implements Runnable{
 
     @Override
     public void run() {
-        while (ticket > 0){
-            UnsafeInstance.reflectGetUnsafe().monitorEnter(object);
-            try{
-                if(ticket > 0){
-                    try{
-                        Thread.sleep(2000);
-                    }catch (InterruptedException e){
-
-                    }
-                    System.out.println(Thread.currentThread().getName()+" 完成售票，余票："+ --ticket);
-                }
-            }finally {
-                UnsafeInstance.reflectGetUnsafe().monitorExit(object);
-            }
-        }
+//        while (ticket > 0){
+//            UnsafeInstance.reflectGetUnsafe().monitorEnter(object);
+//            try{
+//                if(ticket > 0){
+//                    try{
+//                        Thread.sleep(2000);
+//                    }catch (InterruptedException e){
+//
+//                    }
+//                    System.out.println(Thread.currentThread().getName()+" 完成售票，余票："+ --ticket);
+//                }
+//            }finally {
+//                UnsafeInstance.reflectGetUnsafe().monitorExit(object);
+//            }
+//        }
     }
 }

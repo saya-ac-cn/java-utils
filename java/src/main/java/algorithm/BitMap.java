@@ -10,6 +10,8 @@ package algorithm;
  * @Description:
  *  实现BitMap
  *  注：这个bitMap的index是从1开始的
+ *  参见：https://my.oschina.net/freelili/blog/2885263
+ *  https://www.jianshu.com/p/9e7f8f33a61a?from=singlemessage
  */
 
 public class BitMap {
