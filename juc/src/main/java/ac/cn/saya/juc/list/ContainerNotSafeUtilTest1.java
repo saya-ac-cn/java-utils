@@ -17,15 +17,19 @@ import java.util.concurrent.CopyOnWriteArraySet;
 public class ContainerNotSafeUtilTest1 {
 
     public static void main(String[] args) {
-        Map<String,String> list = new HashMap<>();
+        //Map<String,String> list = new HashMap<>();
         //Map<String,String> list = Collections.synchronizedMap(new HashMap<>());
-        //Map<String,String> list = new ConcurrentHashMap<>();
-        for (int i = 0; i < 30; i++) {
-            new Thread(() -> {
-                list.put(Thread.currentThread().getName(),UUID.randomUUID().toString().substring(0, 8));
-                System.out.println(list);
-            }).start();
+        Map<Integer,Integer> map = new ConcurrentHashMap<>();
+        for (int i = 0; i < 11; i++) {
+            map.put(i,i);
         }
+        map.put(11,11);
+        map.put(12,12);
+//        for (int i = 0; i < 30; i++) {
+//            new Thread(() -> {
+//                map.put(Thread.currentThread().getName(),UUID.randomUUID().toString().substring(0, 8));
+//            }).start();
+//        }
     }
 
 

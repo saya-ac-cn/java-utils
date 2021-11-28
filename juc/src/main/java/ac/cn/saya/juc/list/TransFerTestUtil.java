@@ -7,7 +7,7 @@ package ac.cn.saya.juc.list;
  * @Author liunengkai
  * @Date: 2019-05-07 21:15
  * @Description:
- * 传值 传地
+ * 传值 传址
  */
 
 public class TransFerTestUtil {

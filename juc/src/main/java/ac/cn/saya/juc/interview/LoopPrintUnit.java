@@ -11,6 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Author Administrator
  * @Date: 2020/3/10 0010 12:11
  * @Description:循环打印abc 10次 3根 线程
+ * 为防止虚假唤醒，应采用loop
  */
 
 public class LoopPrintUnit {

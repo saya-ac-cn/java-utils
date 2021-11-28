@@ -16,20 +16,21 @@ public class CompletableFutureUtil1 {
     public static void main(String[] args) throws Exception{
         CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {
             try {
-                Thread.sleep(60000);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
             return 6666;
         });
         System.out.println("7777");
-        future.whenComplete((t,u)->{
-            System.out.println("--t:"+t);
-            System.out.println("--u:"+u);
-        }).exceptionally(f->{
-            System.out.println("--exception:"+f.getMessage());
+        Integer integer = future.whenComplete((t, u) -> {
+            System.out.println("--t:" + t);
+            System.out.println("--u:" + u);
+        }).exceptionally(f -> {
+            System.out.println("--exception:" + f.getMessage());
             return 777;
         }).get();
+        System.out.println(integer);
     }
 
 }

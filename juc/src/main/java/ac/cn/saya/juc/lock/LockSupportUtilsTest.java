@@ -1,5 +1,6 @@
 package ac.cn.saya.juc.lock;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
 /**
@@ -18,11 +19,11 @@ public class LockSupportUtilsTest {
         mt.setName("mt");
         mt.start();
         try {
-            Thread.currentThread().sleep(10);
+            TimeUnit.SECONDS.sleep(1);
             mt.park();
-            Thread.currentThread().sleep(10000);
+            TimeUnit.SECONDS.sleep(1);
             mt.unPark();
-            Thread.currentThread().sleep(10000);
+            TimeUnit.SECONDS.sleep(1);
             mt.park();
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -39,15 +40,15 @@ class MyThread extends Thread {
         System.out.println(" Enter Thread running.....");
         while (true) {
             if (isPark) {
-            System.out.println(Thread.currentThread().getName()+"Thread is Park.....");
-            LockSupport.park();
-        }
-        //do something
-        System.out.println(Thread.currentThread().getName()+">> is running");
-        try {
-                Thread.currentThread().sleep(1000);
+                System.out.println(Thread.currentThread().getName()+"Thread is Park.....");
+                LockSupport.park();
+            }
+            //do something
+            System.out.println(Thread.currentThread().getName()+">> is running");
+            try {
+                TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
+                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
