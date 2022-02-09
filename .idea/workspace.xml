@@ -1,385 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b6e9407-e328-475f-b3c9-c03e11c62473" name="Default Changelist" comment="增加二叉树线索化">
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/College.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/OrganizationComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/TestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/University.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/ConcreteComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/ConcreteDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/Decorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/TestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/DashBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/Electric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/Oil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/TestUtil.java" afterDir="false" />
+    <list default="true" id="7dd473e6-ebec-4482-b416-0d166fca8e4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/threadlocal/SafeKpiAssess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Saya.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/internet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/internet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/design.iml" beforeDir="false" afterPath="$PROJECT_DIR$/design/design.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/io/io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/target/classes/file01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/target/classes/file02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/io/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-utils.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/jdbc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/target/classes/mybatis/config/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/target/classes/mybatis/mapping/MemberMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/juc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/juc/juc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/juc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflect/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflect/reflect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/reflect/reflect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/jdbc/.gradle/" />
-    <ignored path="$PROJECT_DIR$/jdbc/build/" />
-    <ignored path="$PROJECT_DIR$/jdbc/out/" />
-    <ignored path="$PROJECT_DIR$/juc/.gradle/" />
-    <ignored path="$PROJECT_DIR$/juc/build/" />
-    <ignored path="$PROJECT_DIR$/juc/out/" />
-    <ignored path="$PROJECT_DIR$/io/.gradle/" />
-    <ignored path="$PROJECT_DIR$/io/build/" />
-    <ignored path="$PROJECT_DIR$/io/out/" />
-    <ignored path="$PROJECT_DIR$/Internet/.gradle/" />
-    <ignored path="$PROJECT_DIR$/Internet/build/" />
-    <ignored path="$PROJECT_DIR$/Internet/out/" />
-    <ignored path="$PROJECT_DIR$/reflect/.gradle/" />
-    <ignored path="$PROJECT_DIR$/reflect/build/" />
-    <ignored path="$PROJECT_DIR$/reflect/out/" />
-    <ignored path="$PROJECT_DIR$/java/.gradle/" />
-    <ignored path="$PROJECT_DIR$/java/build/" />
-    <ignored path="$PROJECT_DIR$/java/out/" />
-    <ignored path="$PROJECT_DIR$/design/.gradle/" />
-    <ignored path="$PROJECT_DIR$/design/build/" />
-    <ignored path="$PROJECT_DIR$/design/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/juc">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$/io">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java-utils" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java-utils" type="f1a62948:ProjectNode" />
-                <item name=":jdbc" type="2d1252cf:ModuleNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/DashBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/TestUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/Electric.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>static</find>
-      <find>add</find>
-      <find>put</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/io</dir>
-      <dir>$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/DDR3.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/DDR4.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/Memory.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/CPU.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/Xeon.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/Core.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/Computer.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/Workstation.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/Server.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/ComputerUtilTest.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/SheepEntity.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/Client.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/deepclone/TypeEntity.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/deepclone/SheepEntity.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/deepclone/Client.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/House.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/HouseBuilder.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/HighBuilding.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/CommonHouse.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/HouseDirector.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/BuilderUtilTest.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/Voltage220V.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/IVoltage5V.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/VoltageAdapter.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/Phone.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/ClassAdapterTestUtil.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/interfaceadapter/IListener.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/interfaceadapter/SessionListenr.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/interfaceadapter/TestUtil.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/Brand.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/Phone.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/FoldedPhone.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/UpRightPhone.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/Huawei.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/Apple.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/TestUtil.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/ConcreteComponent.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/Decorator.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/ConcreteDecorator.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/TestUtil.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/Component.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/University.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/College.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/Department.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/TestUtil.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/OrganizationComponent.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/oil.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/Oil.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/Electric.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/DashBoard.java" />
-        <option value="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/TestUtil.java" />
-      </list>
-    </option>
+  <component name="KotlinMultiplatform">
+    <allAvailableExecutables />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="1o2sw655" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="/Library/maven/repository" />
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
         <option name="usePluginRegistry" value="true" />
-        <option name="userSettingsFile" value="/Library/maven/conf/settings.xml" />
+        <option name="userSettingsFile" value="/Library/dev-tools/apache-maven-3.8.2/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
+  <component name="MavenRunner">
+    <option name="jreName" value="azul-17" />
+    <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="793" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="design" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="design" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="design" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="design" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="design" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="design" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="design" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="saya" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="design" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ac" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="saya" type="462c0819:PsiDirectoryNode" />
-              <item name="facade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-utils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-utils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="jdbc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectId" id="24sPlG37fZay5QBgiMMh8stoPYa" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="GO_FMT" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="186" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564065645345" />
-    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.41149426" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/method" />
-      <recent name="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/singleton" />
-      <recent name="$PROJECT_DIR$/design/src/main/java/ac/cn/saya/principle/inversion" />
-      <recent name="$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/lock" />
-      <recent name="$PROJECT_DIR$/jdbc" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ac.cn.saya.prototype.deepclone" />
-      <recent name="ac.cn.saya.factory.abstracts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/reflect/src/main/java/ac/cn/saya/reflect/staticproxy" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.TestUtil (4)">
+  <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="应用程序">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -394,18 +136,12 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUtil (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.bridge.TestUtil" />
-      <module name="ac.cn.saya.design.main" />
+    <configuration name="SafeKpiAssess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.juc.threadlocal.SafeKpiAssess" />
+      <module name="juc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ac.cn.saya.bridge.*" />
+          <option name="PATTERN" value="ac.cn.saya.juc.threadlocal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -413,54 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUtil (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.decorator.TestUtil" />
-      <module name="ac.cn.saya.design.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.decorator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUtil (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.composite.TestUtil" />
-      <module name="ac.cn.saya.design.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUtil (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.facade.TestUtil" />
-      <module name="ac.cn.saya.design.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.facade.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ac.cn.saya.adapter.interfaceadapter.TestUtil" />
-      <module name="ac.cn.saya.design.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.cn.saya.adapter.interfaceadapter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -472,21 +167,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ac.cn.saya.jdbc.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ac.cn.saya.jdbc.JdbcApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JucApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ac.cn.saya.juc.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ac.cn.saya.juc.JucApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -505,1257 +187,23 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestUtil (4)" />
-        <item itemvalue="Application.TestUtil (3)" />
-        <item itemvalue="Application.TestUtil (2)" />
-        <item itemvalue="Application.TestUtil (1)" />
-        <item itemvalue="Application.TestUtil" />
+        <item itemvalue="Application.SafeKpiAssess" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8b6e9407-e328-475f-b3c9-c03e11c62473" name="Default Changelist" comment="" />
-      <created>1555754987172</created>
+      <changelist id="7dd473e6-ebec-4482-b416-0d166fca8e4a" name="Default Changelist" comment="" />
+      <created>1644416470469</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1555754987172</updated>
-      <workItem from="1555754989021" duration="2430000" />
-      <workItem from="1555767667176" duration="5580000" />
-      <workItem from="1555831803614" duration="8371000" />
-      <workItem from="1555938075187" duration="4118000" />
-      <workItem from="1556028913845" duration="4175000" />
-      <workItem from="1556109878357" duration="6010000" />
-      <workItem from="1556193969068" duration="2083000" />
-      <workItem from="1556331371904" duration="2687000" />
-      <workItem from="1556374322928" duration="261000" />
-      <workItem from="1556465863865" duration="24000" />
-      <workItem from="1556549857032" duration="1485000" />
-      <workItem from="1556635608423" duration="922000" />
-      <workItem from="1556714830340" duration="2834000" />
-      <workItem from="1556809234797" duration="498000" />
-      <workItem from="1556891988831" duration="719000" />
-      <workItem from="1556895592874" duration="1418000" />
-      <workItem from="1556982636607" duration="950000" />
-      <workItem from="1557069045063" duration="494000" />
-      <workItem from="1557069548202" duration="69000" />
-      <workItem from="1557149192076" duration="3482000" />
-      <workItem from="1557230247108" duration="2158000" />
-      <workItem from="1557323369971" duration="2005000" />
-      <workItem from="1557407815738" duration="1954000" />
-      <workItem from="1557588424082" duration="91000" />
-      <workItem from="1557650043259" duration="4293000" />
-      <workItem from="1557655460143" duration="20000" />
-      <workItem from="1557756870585" duration="840000" />
-      <workItem from="1557843188904" duration="2269000" />
-      <workItem from="1557921161129" duration="1897000" />
-      <workItem from="1557927473483" duration="904000" />
-      <workItem from="1558015091412" duration="620000" />
-      <workItem from="1558184505965" duration="1621000" />
-      <workItem from="1558275737824" duration="1790000" />
-      <workItem from="1558362123141" duration="1527000" />
-      <workItem from="1558444502087" duration="4130000" />
-      <workItem from="1558531895292" duration="1730000" />
-      <workItem from="1558617917258" duration="1844000" />
-      <workItem from="1558624463915" duration="16000" />
-      <workItem from="1558705911263" duration="5710000" />
-      <workItem from="1558851942109" duration="3452000" />
-      <workItem from="1558876135563" duration="1280000" />
-      <workItem from="1558962258969" duration="2386000" />
-      <workItem from="1559048197568" duration="964000" />
-      <workItem from="1559134719264" duration="891000" />
-      <workItem from="1559387196230" duration="7562000" />
-      <workItem from="1559569534043" duration="2806000" />
-      <workItem from="1559576391322" duration="1015000" />
-      <workItem from="1559653483078" duration="2748000" />
-      <workItem from="1559740597487" duration="2020000" />
-      <workItem from="1559915604950" duration="3760000" />
-      <workItem from="1560000653523" duration="1601000" />
-      <workItem from="1560090519113" duration="1674000" />
-      <workItem from="1560173458270" duration="704000" />
-      <workItem from="1560262861086" duration="521000" />
-      <workItem from="1560353645523" duration="2123000" />
-      <workItem from="1560606912395" duration="1269000" />
-      <workItem from="1560950602298" duration="4049000" />
-      <workItem from="1561029502663" duration="3712000" />
-      <workItem from="1561126994104" duration="7437000" />
-      <workItem from="1561210020413" duration="896000" />
-      <workItem from="1561295975696" duration="2382000" />
-      <workItem from="1561378398235" duration="6063000" />
-      <workItem from="1561466307720" duration="4323000" />
-      <workItem from="1561552902154" duration="4254000" />
-      <workItem from="1561638858171" duration="1645000" />
-      <workItem from="1561731100552" duration="549000" />
-      <workItem from="1561793678686" duration="2225000" />
-      <workItem from="1561992417027" duration="375000" />
-      <workItem from="1562080079865" duration="12000" />
-      <workItem from="1562420450735" duration="1583000" />
-      <workItem from="1562510951482" duration="1987000" />
-      <workItem from="1562585686728" duration="785000" />
-      <workItem from="1562682259492" duration="231000" />
-      <workItem from="1562762642621" duration="2827000" />
-      <workItem from="1562849323367" duration="946000" />
-      <workItem from="1562937691139" duration="3735000" />
-      <workItem from="1563195010284" duration="2603000" />
-      <workItem from="1563288831323" duration="2516000" />
-      <workItem from="1563372941474" duration="1768000" />
-      <workItem from="1563457509408" duration="1079000" />
-      <workItem from="1563715274622" duration="1581000" />
-      <workItem from="1563799793796" duration="1995000" />
-      <workItem from="1563892899919" duration="1480000" />
-      <workItem from="1563974078758" duration="2175000" />
-      <workItem from="1564064137530" duration="1307000" />
+      <updated>1644416470469</updated>
+      <workItem from="1644416472153" duration="1484000" />
     </task>
-    <task id="LOCAL-00016" summary="增加传值和传址实例">
-      <created>1557325068717</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1557325068718</updated>
-    </task>
-    <task id="LOCAL-00017" summary="增加可重入锁实例">
-      <created>1557414367761</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1557414367761</updated>
-    </task>
-    <task id="LOCAL-00018" summary="增加自旋锁">
-      <created>1557588501136</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1557588501136</updated>
-    </task>
-    <task id="LOCAL-00019" summary="增加倒计数、集齐函数">
-      <created>1557654916330</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1557654916330</updated>
-    </task>
-    <task id="LOCAL-00020" summary="增加信号量类">
-      <created>1557758307302</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1557758307302</updated>
-    </task>
-    <task id="LOCAL-00021" summary="增加阻塞队列">
-      <created>1557845775316</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1557845775317</updated>
-    </task>
-    <task id="LOCAL-00022" summary="增加线程交替打印">
-      <created>1557927043042</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1557927043043</updated>
-    </task>
-    <task id="LOCAL-00023" summary="增加juc综合运用">
-      <created>1558015714778</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1558015714778</updated>
-    </task>
-    <task id="LOCAL-00024" summary="增加线程池创建实例">
-      <created>1558187800247</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1558187800247</updated>
-    </task>
-    <task id="LOCAL-00025" summary="增加手写线程池">
-      <created>1558277486297</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1558277486297</updated>
-    </task>
-    <task id="LOCAL-00026" summary="增加死锁示例">
-      <created>1558363637442</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1558363637442</updated>
-    </task>
-    <task id="LOCAL-00027" summary="增加NIO缓存区示例">
-      <created>1558446307469</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1558446307469</updated>
-    </task>
-    <task id="LOCAL-00028" summary="增加管道示例">
-      <created>1558533385363</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1558533385363</updated>
-    </task>
-    <task id="LOCAL-00029" summary="增加字符串比较">
-      <created>1558621921252</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1558621921267</updated>
-    </task>
-    <task id="LOCAL-00030" summary="增加Comparable和Comparator">
-      <created>1558711406603</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1558711406603</updated>
-    </task>
-    <task id="LOCAL-00031" summary="增加AtomicStampedReference案例">
-      <created>1558966380345</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1558966380346</updated>
-    </task>
-    <task id="LOCAL-00032" summary="增加单例模式2.0">
-      <created>1559135570353</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1559135570354</updated>
-    </task>
-    <task id="LOCAL-00033" summary="增加并行希尔排序">
-      <created>1559392215900</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1559392215900</updated>
-    </task>
-    <task id="LOCAL-00034" summary="增加Consumer-消费者函数式接口">
-      <created>1559656264023</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1559656264024</updated>
-    </task>
-    <task id="LOCAL-00035" summary="增加Predicate函数接口">
-      <created>1559742756431</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1559742756431</updated>
-    </task>
-    <task id="LOCAL-00036" summary="增加Function接口函数实例">
-      <created>1559919454683</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1559919454684</updated>
-    </task>
-    <task id="LOCAL-00037" summary="增加Supplier-供应商">
-      <created>1560002177502</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1560002177503</updated>
-    </task>
-    <task id="LOCAL-00038" summary="增加Operator接口函数">
-      <created>1560092203185</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1560092203185</updated>
-    </task>
-    <task id="LOCAL-00039" summary="增加批量添加线程">
-      <created>1560354187660</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1560354187660</updated>
-    </task>
-    <task id="LOCAL-00040" summary="增加CountDownLatch+线程池批量添加数据示例">
-      <created>1560612547940</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1560612547940</updated>
-    </task>
-    <task id="LOCAL-00041" summary="增加java二叉树遍历及查找">
-      <created>1560955428542</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1560955428542</updated>
-    </task>
-    <task id="LOCAL-00042" summary="完成二叉树删除及数组存储二叉树的前序遍历">
-      <created>1561034714262</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1561034714262</updated>
-    </task>
-    <task id="LOCAL-00043" summary="增加二叉树线索化">
-      <created>1561131512037</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1561131512038</updated>
-    </task>
-    <task id="LOCAL-00044" summary="增加二叉树线索化遍历">
-      <created>1561134620445</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1561134620445</updated>
-    </task>
-    <task id="LOCAL-00045" summary="增加堆排序">
-      <created>1561298667957</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1561298667957</updated>
-    </task>
-    <task id="LOCAL-00046" summary="增加哈夫曼树">
-      <created>1561384203890</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1561384203890</updated>
-    </task>
-    <task id="LOCAL-00047" summary="增加哈夫曼压缩解压文件算法">
-      <created>1561471381854</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1561471381855</updated>
-    </task>
-    <task id="LOCAL-00048" summary="增加二叉树排序树查找">
-      <created>1561557067685</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1561557067686</updated>
-    </task>
-    <task id="LOCAL-00049" summary="增加二叉树排序树删除">
-      <created>1561639741489</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1561639741490</updated>
-    </task>
-    <task id="LOCAL-00050" summary="完成二叉排序树删除">
-      <created>1561731199773</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1561731199776</updated>
-    </task>
-    <task id="LOCAL-00051" summary="增加平衡二叉树插入">
-      <created>1561992570281</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1561992570282</updated>
-    </task>
-    <task id="LOCAL-00052" summary="增加单一职责原则">
-      <created>1562423701073</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1562423701075</updated>
-    </task>
-    <task id="LOCAL-00053" summary="增加接口隔离原则">
-      <created>1562585986349</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1562585986350</updated>
-    </task>
-    <task id="LOCAL-00054" summary="提交设计原则">
-      <created>1562682343670</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1562682343672</updated>
-    </task>
-    <task id="LOCAL-00055" summary="增加单例模式">
-      <created>1562765569511</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1562765569512</updated>
-    </task>
-    <task id="LOCAL-00056" summary="增加单例模式-枚举">
-      <created>1562855530241</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1562855530242</updated>
-    </task>
-    <task id="LOCAL-00057" summary="增加简单工厂模式">
-      <created>1563200439239</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1563200439240</updated>
-    </task>
-    <task id="LOCAL-00058" summary="增加抽象工厂方法">
-      <created>1563290912196</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1563290912198</updated>
-    </task>
-    <task id="LOCAL-00059" summary="增加抽象工厂方法模式">
-      <created>1563374952673</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1563374952675</updated>
-    </task>
-    <task id="LOCAL-00060" summary="增加原型">
-      <created>1563458784154</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1563458784156</updated>
-    </task>
-    <task id="LOCAL-00061" summary="增加建造者模式">
-      <created>1563719315368</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1563719315369</updated>
-    </task>
-    <task id="LOCAL-00062" summary="增加类适配器">
-      <created>1563802048317</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1563802048320</updated>
-    </task>
-    <task id="LOCAL-00063" summary="增加接口适配器">
-      <created>1563893752817</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1563893752818</updated>
-    </task>
-    <task id="LOCAL-00064" summary="增加桥接模式">
-      <created>1563975896516</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1563975896517</updated>
-    </task>
-    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 43m 09s.xml">
-      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 43m 37s.xml">
-      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 44m 24s.xml">
-      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 44m 44s.xml">
-      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 45m 24s.xml">
-      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 45m 52s.xml">
-      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 47m 34s.xml">
-      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OperatorUtilTest_unaryOperator - 2019.06.09 at 22h 50m 13s.xml">
-      <configuration name="OperatorUtilTest.unaryOperator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OperatorUtilTest_binaryOperator - 2019.06.09 at 22h 54m 03s.xml">
-      <configuration name="OperatorUtilTest.binaryOperator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OperatorUtilTest_binaryOperator - 2019.06.09 at 22h 55m 33s.xml">
-      <configuration name="OperatorUtilTest.binaryOperator" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187325000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="793" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34620887" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3281027" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39942938" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32952926" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3281027" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.27532098" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32952926" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3281027" />
-      <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.3281027" />
-      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.32952926" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.2274678" />
-      <window_info anchor="right" id="Database" order="7" weight="0.3297568" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加CountDownLatch+线程池批量添加数据示例" />
-    <MESSAGE value="增加java二叉树遍历及查找" />
-    <MESSAGE value="完成二叉树删除及数组存储二叉树的前序遍历" />
-    <MESSAGE value="增加二叉树线索化遍历" />
-    <MESSAGE value="增加堆排序" />
-    <MESSAGE value="增加哈夫曼树" />
-    <MESSAGE value="增加哈夫曼压缩解压文件算法" />
-    <MESSAGE value="增加二叉树排序树查找" />
-    <MESSAGE value="增加二叉树排序树删除" />
-    <MESSAGE value="完成二叉排序树删除" />
-    <MESSAGE value="增加平衡二叉树插入" />
-    <MESSAGE value="增加二叉树线索化" />
-    <MESSAGE value="增加单一职责原则" />
-    <MESSAGE value="增加接口隔离原则" />
-    <MESSAGE value="提交设计原则" />
-    <MESSAGE value="增加单例模式" />
-    <MESSAGE value="增加单例模式-枚举" />
-    <MESSAGE value="增加简单工厂模式" />
-    <MESSAGE value="增加抽象工厂方法" />
-    <MESSAGE value="增加抽象工厂方法模式" />
-    <MESSAGE value="增加原型" />
-    <MESSAGE value="增加建造者模式" />
-    <MESSAGE value="增加类适配器" />
-    <MESSAGE value="增加接口适配器" />
-    <MESSAGE value="增加桥接模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加桥接模式" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/juc/src/main/java/ac/cn/saya/juc/parallel/SearchUtil.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java/src/main/java/tree/ThreadedBinaryTreeUtil.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="threadedBinaryTree.root" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/method/Phone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/method/KafkaSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/ac.cn.saya.factory.method">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>ac.cn.saya.factory.method</OriginalElement>
-          <nodes>
-            <node x="44.25" y="153.0">ac.cn.saya.factory.method.Message</node>
-            <node x="0.0" y="306.0">ac.cn.saya.factory.method.MessageUtilTest</node>
-            <node x="107.0" y="232.0">ac.cn.saya.factory.method.Email</node>
-            <node x="134.0" y="79.0">ac.cn.saya.factory.method.ActiveMQSend</node>
-            <node x="40.0" y="0.0">ac.cn.saya.factory.method.MessageSendMethod</node>
-            <node x="0.0" y="232.0">ac.cn.saya.factory.method.Phone</node>
-            <node x="0.0" y="79.0">ac.cn.saya.factory.method.KafkaSend</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="ac.cn.saya.factory.method.Email" target="ac.cn.saya.factory.method.Message">
-              <point x="0.0" y="-14.5" />
-              <point x="147.0" y="207.0" />
-              <point x="120.75" y="207.0" />
-              <point x="25.5" y="14.5" />
-            </edge>
-            <edge source="ac.cn.saya.factory.method.Phone" target="ac.cn.saya.factory.method.Message">
-              <point x="0.0" y="-14.5" />
-              <point x="43.5" y="207.0" />
-              <point x="69.75" y="207.0" />
-              <point x="-25.5" y="14.5" />
-            </edge>
-            <edge source="ac.cn.saya.factory.method.ActiveMQSend" target="ac.cn.saya.factory.method.MessageSendMethod">
-              <point x="0.0" y="-14.5" />
-              <point x="203.0" y="54.0" />
-              <point x="175.0" y="54.0" />
-              <point x="45.0" y="14.5" />
-            </edge>
-            <edge source="ac.cn.saya.factory.method.KafkaSend" target="ac.cn.saya.factory.method.MessageSendMethod">
-              <point x="0.0" y="-14.5" />
-              <point x="57.0" y="54.0" />
-              <point x="85.0" y="54.0" />
-              <point x="-45.0" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-106.0" y="83.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/Cloneable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/Computer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-          <folding>
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/abstracts/ComputerUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/factory/method/MessageUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/SheepEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/deepclone/TypeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/deepclone/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/ac.cn.saya.builder">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>ac.cn.saya.builder</OriginalElement>
-          <nodes>
-            <node x="83.5" y="0.0">ac.cn.saya.builder.HouseBuilder</node>
-            <node x="-38.0" y="186.0">ac.cn.saya.builder.HouseDirector</node>
-            <node x="-233.0" y="119.0">ac.cn.saya.builder.BuilderUtilTest</node>
-            <node x="163.0" y="79.0">ac.cn.saya.builder.HighBuilding</node>
-            <node x="0.0" y="79.0">ac.cn.saya.builder.CommonHouse</node>
-            <node x="153.0" y="159.0">ac.cn.saya.builder.House</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="ac.cn.saya.builder.CommonHouse" target="ac.cn.saya.builder.HouseBuilder">
-              <point x="0.0" y="-14.5" />
-              <point x="71.5" y="54.0" />
-              <point x="116.25" y="54.0" />
-              <point x="-32.75" y="14.5" />
-            </edge>
-            <edge source="ac.cn.saya.builder.HighBuilding" target="ac.cn.saya.builder.HouseBuilder">
-              <point x="0.0" y="-14.5" />
-              <point x="226.5" y="54.0" />
-              <point x="181.75" y="54.0" />
-              <point x="32.75" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="145.0" y="243.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/prototype/deepclone/SheepEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/House.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/HouseBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/HighBuilding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/CommonHouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/HouseDirector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/builder/BuilderUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/Voltage220V.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/interfaceadapter/SessionListenr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/IVoltage5V.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/VoltageAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/Phone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/classadapter/ClassAdapterTestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/interfaceadapter/IListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/adapter/interfaceadapter/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/UpRightPhone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/Huawei.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/ac.cn.saya.bridge">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>ac.cn.saya.bridge</OriginalElement>
-          <nodes>
-            <node x="" y="">ac.cn.saya.bridge.Huawei</node>
-            <node x="" y="">ac.cn.saya.bridge.Brand</node>
-            <node x="" y="">ac.cn.saya.bridge.FoldedPhone</node>
-            <node x="" y="">ac.cn.saya.bridge.Phone</node>
-            <node x="" y="">ac.cn.saya.bridge.Apple</node>
-            <node x="" y="">ac.cn.saya.bridge.TestUtil</node>
-            <node x="" y="">ac.cn.saya.bridge.UpRightPhone</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="143.0" y="168.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/Brand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/Apple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/Phone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/ConcreteComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/Decorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/ConcreteDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/FoldedPhone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="39" />
-          <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/bridge/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/decorator/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/ac.cn.saya.composite">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>ac.cn.saya.composite</OriginalElement>
-          <nodes>
-            <node x="0.0" y="79.0">ac.cn.saya.composite.Department</node>
-            <node x="253.0" y="79.0">ac.cn.saya.composite.University</node>
-            <node x="0.0" y="153.0">ac.cn.saya.composite.TestUtil</node>
-            <node x="140.0" y="79.0">ac.cn.saya.composite.College</node>
-            <node x="87.0" y="0.0">ac.cn.saya.composite.OrganizationComponent</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="ac.cn.saya.composite.College" target="ac.cn.saya.composite.OrganizationComponent">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="ac.cn.saya.composite.University" target="ac.cn.saya.composite.OrganizationComponent">
-              <point x="0.0" y="-14.5" />
-              <point x="308.0" y="54.0" />
-              <point x="252.83333333333331" y="54.0" />
-              <point x="66.33333333333331" y="14.5" />
-            </edge>
-            <edge source="ac.cn.saya.composite.Department" target="ac.cn.saya.composite.OrganizationComponent">
-              <point x="0.0" y="-14.5" />
-              <point x="60.0" y="54.0" />
-              <point x="120.16666666666667" y="54.0" />
-              <point x="-66.33333333333333" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-39.0" y="121.0" />
-          <SelectedNodes>
-            <node>ac.cn.saya.composite.OrganizationComponent</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/University.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#412#435#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/OrganizationComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/College.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/composite/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/Oil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/Electric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/DashBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/src/main/java/ac/cn/saya/facade/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.12.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.41149426" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.41149426" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>saya</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.41149426" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.41149426" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <option name="version" value="3" />
   </component>
 </project>

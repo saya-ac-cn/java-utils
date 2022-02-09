@@ -1,9 +1,0 @@
-rootProject.name = 'java-utils'
-include 'jdbc'
-include 'juc'
-include 'io'
-include 'Internet'
-include 'reflect'
-include 'java'
-include 'design'
-
