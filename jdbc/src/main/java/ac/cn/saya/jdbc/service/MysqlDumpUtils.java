@@ -33,7 +33,6 @@ public class MysqlDumpUtils {
     private String BAK_DATABASE = null;
     private File bakFile;
     private Connection connection = null;
-    // 数据库操作
     private final String SQL = "SELECT * FROM ";
 
 
