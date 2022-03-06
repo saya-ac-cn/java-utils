@@ -25,14 +25,19 @@ public class MysqlWriteService {
     private MysqlDAO mysqlDAO;
 
     /**
+     * 备份数据库
+     */
+    public void mysqlDump(){
+        mysqlDAO.mysqlDump();
+    }
+
+    /**
      * 普通方式写入
      */
-    public void useOrdinaryWriteMysql()
-    {
+    public void useOrdinaryWriteMysql() {
         List<Integer> list = new ArrayList<>();
-        for(int i = 1; i <= 1000000; i++)
-        {
-            list.add((int)(1+Math.random()*10000000));
+        for (int i = 1; i <= 1000000; i++) {
+            list.add((int) (1 + Math.random() * 10000000));
         }
         mysqlDAO.useOrdinaryWriteMysql(list);
     }
@@ -40,12 +45,10 @@ public class MysqlWriteService {
     /**
      * 采用事务的方式提交
      */
-    public void useTransactionWriteMysql()
-    {
+    public void useTransactionWriteMysql() {
         List<Integer> list = new ArrayList<>();
-        for(int i = 1; i <= 1000000; i++)
-        {
-            list.add((int)(1+Math.random()*10000000));
+        for (int i = 1; i <= 1000000; i++) {
+            list.add((int) (1 + Math.random() * 10000000));
         }
         mysqlDAO.useTransactionWriteMysql(list);
     }
@@ -53,12 +56,10 @@ public class MysqlWriteService {
     /**
      * 采用批处理的方式提交
      */
-    public void useBatchProcessingWriteMysql()
-    {
+    public void useBatchProcessingWriteMysql() {
         List<Integer> list = new ArrayList<>();
-        for(int i = 1; i <= 1000000; i++)
-        {
-            list.add((int)(1+Math.random()*10000000));
+        for (int i = 1; i <= 1000000; i++) {
+            list.add((int) (1 + Math.random() * 10000000));
         }
         mysqlDAO.useBatchProcessingWriteMysql(list);
     }
@@ -66,12 +67,10 @@ public class MysqlWriteService {
     /**
      * 采用批处理+事务的方式提交
      */
-    public void useBatchProcessingAndTransactionWriteMysql()
-    {
+    public void useBatchProcessingAndTransactionWriteMysql() {
         List<Integer> list = new ArrayList<>();
-        for(int i = 1; i <= 1000000; i++)
-        {
-            list.add((int)(1+Math.random()*10000000));
+        for (int i = 1; i <= 1000000; i++) {
+            list.add((int) (1 + Math.random() * 10000000));
         }
         mysqlDAO.useBatchProcessingAndTransactionWriteMysql(list);
     }

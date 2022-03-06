@@ -1,5 +1,7 @@
 package ac.cn.saya.jdbc.service;
 
+import org.springframework.util.StringUtils;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -8,6 +10,7 @@ import java.math.BigDecimal;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -23,78 +26,35 @@ import java.util.stream.Collectors;
 
 public class MysqlDumpUtils {
 
-    private final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private final String JDBC_URL = "jdbc:mysql://%s:%s/%s?useUnicode=true&characterEncoding=UTF-8&useSSL=false";
-    private String IP = null;
-    private String PORT = null;
-    private String USERNAME = null;
-    private String PASSWORD = null;
-    private String DATABASE = null;
-    private String BAK_DATABASE = null;
-    private File bakFile;
-    private Connection connection = null;
+    /**
+     * 数据源连接信息
+     */
+    private final Connection CONNECTION;
+
+    /**
+     * 备份后的文件
+     */
+    private final File BACK_FILE;
+
+    private final String BACK_DATABASE;
     private final String SQL = "SELECT * FROM ";
 
 
     /**
-     * <构造函数>
-     *
-     * @param databaseIp   数据库ip
-     * @param databasePort 数据库端口
-     * @param databaseName 数据库名称
-     * @param userName     数据库用户名
-     * @param password     密码
-     * @param bakFilePath  备份文件地址
+     * @param connection    jdbc连接
+     * @param backPath  备份文件地址
+     * @param database 要备份的数据库
      */
-    public MysqlDumpUtils(String databaseIp, String databasePort, String databaseName, String userName, String password, String bakFilePath) {
-        try {
-            Class.forName(this.DRIVER);
-            this.IP = databaseIp;
-            this.PORT = databasePort;
-            this.USERNAME = userName;
-            this.DATABASE = databaseName;
-            this.PASSWORD = password;
-            this.BAK_DATABASE = databaseName;
-
-            SimpleDateFormat tempDate = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-            String datetime = tempDate.format(new java.util.Date());
-            //自动加上时间区分s
-            this.bakFile = new File(bakFilePath, databaseName + "-" + datetime + ".sql");
-        } catch (ClassNotFoundException e) {
+    public MysqlDumpUtils(Connection connection, String backPath,String database) {
+        this.BACK_DATABASE = database;
+        this.CONNECTION = connection;
+        SimpleDateFormat tempDate = new SimpleDateFormat("yyyyMMddHHmmss");
+        String datetime = tempDate.format(new Date());
+        this.BACK_FILE = new File(backPath,   database+"_" + datetime + ".sql");
+        try(this.CONNECTION) {
+            beginBack();
+        } catch (Exception e) {
             System.err.println("can not load jdbc driver："+e);
-        }
-    }
-
-
-    /**
-     * 获取数据库连接
-     *
-     * @return
-     */
-    private Connection getConnection() {
-        if (connection == null) {
-            try {
-                String url = String.format(JDBC_URL, IP, PORT, DATABASE);
-                connection = DriverManager.getConnection(url, USERNAME, PASSWORD);
-            } catch (SQLException e) {
-                System.err.println("get" + DATABASE + " connection failure："+ e);
-            }
-        }
-        return connection;
-    }
-
-    /**
-     * 关闭数据库连接
-     *
-     * @param connection 数据库连接
-     */
-    private void closeConnection(Connection connection) {
-        if (connection != null) {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                System.err.println("close" + DATABASE + " connection failure："+e);
-            }
         }
     }
 
@@ -103,11 +63,10 @@ public class MysqlDumpUtils {
      */
     private List<String> getTableNames() {
         List<String> tableNames = new ArrayList<String>();
-        Connection connection = getConnection();
         ResultSet rs = null;
         try {
             // 获取数据库的元数据
-            DatabaseMetaData db = connection.getMetaData();
+            DatabaseMetaData db = CONNECTION.getMetaData();
             // 从元数据中获取到所有的表名
             /**
              * 第一个是数据库名称，对于MySQL，则对应相应的数据库，对于Oracle来说，则是对应相应的数据库实例，可以不填，也可以直接使用Connection的实例对象中的getCatalog()方法返回的值填充；
@@ -131,7 +90,7 @@ public class MysqlDumpUtils {
              * REF_GENERATION String
              * 可根据需要使用
              */
-            rs = db.getTables(connection.getCatalog(),null,"%",new String[]{"TABLE"});
+            rs = db.getTables(CONNECTION.getCatalog(),null,"%",new String[]{"TABLE"});
             while (rs.next()) {
                 tableNames.add(rs.getString(3));
             }
@@ -157,12 +116,10 @@ public class MysqlDumpUtils {
      */
     private List<String> getColumnNames(String tableName) {
         List<String> columnNames = new ArrayList<String>();
-        // 与数据库的连接
-        Connection connection = getConnection();
         PreparedStatement pStemt = null;
         String tableSql = SQL + tableName;
         try {
-            pStemt = connection.prepareStatement(tableSql);
+            pStemt = CONNECTION.prepareStatement(tableSql);
             // 结果集元数据
             ResultSetMetaData rsmd = pStemt.getMetaData();
             // 表列数
@@ -192,12 +149,10 @@ public class MysqlDumpUtils {
      */
     private List<String> getColumnTypes(String tableName) {
         List<String> columnTypes = new ArrayList<String>();
-        // 与数据库的连接
-        Connection connection = getConnection();
         PreparedStatement pStemt = null;
         String tableSql = SQL + tableName;
         try {
-            pStemt = connection.prepareStatement(tableSql);
+            pStemt = CONNECTION.prepareStatement(tableSql);
             // 结果集元数据
             ResultSetMetaData rsmd = pStemt.getMetaData();
             // 表列数
@@ -231,13 +186,12 @@ public class MysqlDumpUtils {
      */
     private String generateCreateTableSql(String tableName) {
         String sql = String.format("SHOW CREATE TABLE %s", tableName);
-        Connection connection = null;
         PreparedStatement pstmt = null;
         try {
-            connection = getConnection();
-            pstmt = connection.prepareStatement(sql);
+            pstmt = CONNECTION.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery();
-            System.err.println(tableName);
+            System.err.println("导出:"+tableName);
+            // SHOW CREATE TABLE 是查看表结构，查询后只会返回一行两列数据
             while (rs.next()) {
                 // 返回建表语句语句，查询结果的第二列是建表语句，第一列是表名
                 return rs.getString(2);
@@ -262,15 +216,13 @@ public class MysqlDumpUtils {
      * @return
      */
     private List<String> getColumnComments(String tableName) {
-        // 与数据库的连接
-        Connection connection = getConnection();
         PreparedStatement pStemt = null;
         String tableSql = SQL + tableName;
         // 列名注释集合
         List<String> columnComments = new ArrayList<>();
         ResultSet rs = null;
         try {
-            pStemt = connection.prepareStatement(tableSql);
+            pStemt = CONNECTION.prepareStatement(tableSql);
             rs = pStemt.executeQuery("show full columns from " + tableName);
             while (rs.next()) {
                 columnComments.add(rs.getString("Comment"));
@@ -299,8 +251,6 @@ public class MysqlDumpUtils {
      * @author
      */
     private String bakTableData(String tableName) {
-
-        Connection connection = null;
         PreparedStatement pstmt = null;
         try {
             // 备份建表语句
@@ -309,9 +259,9 @@ public class MysqlDumpUtils {
                 throw new SQLException(tableName + "不存在！");
             }
             createTableSql = String.format(
-                    "\n\n-- ----------------------------\n-- Table structure for %s\n-- ----------------------------\nDROP TABLE IF EXISTS `%s`;\n%s;\n\n-- ----------------------------\n -- Records of access\n-- ----------------------------",
+                    "\n\n-- ----------------------------\n-- Table structure for %s\n-- ----------------------------\nDROP TABLE IF EXISTS `%s`;\n%s;\n\n-- ----------------------------\n-- Records of access\n-- ----------------------------\n",
                     tableName, tableName, createTableSql);
-            try (FileOutputStream fos = new FileOutputStream(bakFile, true)) {
+            try (FileOutputStream fos = new FileOutputStream(BACK_FILE, true)) {
                 fos.write((createTableSql).getBytes());
             } catch (Exception e) {
                 System.err.println("文件写入失败："+e);
@@ -333,17 +283,16 @@ public class MysqlDumpUtils {
 
             String sql = String.format("select %s from %s", columnArrayStr, tableName);
 
-            connection = getConnection();
-            pstmt = connection.prepareStatement(sql);
+            pstmt = CONNECTION.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery();
             while (rs.next()) {
                 String rowValues = getRowValues(rs, columnNames.size(), columnTypes);
                 // 返回建表语句语句，查询结果的第二列是建表语句，第一列是表名
-                String insertSql = String.format("insert into %s (%s) values(%s);", tableName, columnArrayStr,
+                String insertSql = String.format("insert into `%s` (%s) values(%s);", tableName, columnArrayStr,
                         rowValues);
-                insertSql = insertSql.replaceAll("\n", "<br/>");
+                insertSql = insertSql.replaceAll("\n", "\\\n");
                 insertSql = insertSql + "\n";
-                try (FileOutputStream fos = new FileOutputStream(bakFile, true)) {
+                try (FileOutputStream fos = new FileOutputStream(BACK_FILE, true)) {
                     fos.write((insertSql).getBytes());
                 } catch (Exception e) {
                     System.err.println("文件写入失败："+e);
@@ -376,22 +325,22 @@ public class MysqlDumpUtils {
         try {
             String rowValues = null;
             for (int i = 1; i <= size; i++) {
-                String columnValue = null;
-
                 // 获取字段值
-                columnValue = getValue(rs, i, columnTypeList.get(i - 1));
-                // 如果是空值不添加单引号
-                if (null != columnValue) {
-                    columnValue = "'" + columnValue + "'";
+                Object originalColumnValue = getValue(rs, i, columnTypeList.get(i - 1));
+                String repairColumnValue;
+                if (originalColumnValue instanceof String) {
+                    repairColumnValue = "'" + originalColumnValue + "'";
+                }else {
+                    repairColumnValue = (StringUtils.isEmpty(originalColumnValue))?null:originalColumnValue.toString();
                 }
                 // 拼接字段值
                 if (null == rowValues) {
-                    rowValues = columnValue;
+                    // 判断是否是第一次拼接
+                    rowValues = repairColumnValue;
                 } else {
-                    rowValues = rowValues + "," + columnValue;
+                    rowValues = rowValues + "," + repairColumnValue;
                 }
             }
-
             return rowValues;
         } catch (Exception e) {
             e.printStackTrace();
@@ -407,73 +356,72 @@ public class MysqlDumpUtils {
      * @return
      * @author
      */
-    private String getValue(ResultSet resultSet, Integer index, String columnType) {
+    private Object getValue(ResultSet resultSet, Integer index, String columnType) {
         try {
-            System.out.println("列num："+index);
+            //System.out.println("列num："+index);
             if ("int".equals(columnType) || "INT".equals(columnType)) {
                 // 整数
                 Object intValue = resultSet.getObject(index);
                 if (null == intValue) {
                     return null;
                 }
-                return intValue + "";
+                return intValue;
             } else if ("bigint".equals(columnType) || "BIGINT".equals(columnType)) {
-
                 // 长整形
                 Object value = resultSet.getObject(index);
                 if (null == value) {
                     return null;
                 }
-                return value + "";
+                return value;
             } else if ("smallint".equals(columnType) || "SMALLINT".equals(columnType)) {
                 // 整数
                 Object value = resultSet.getObject(index);
                 if (null == value) {
                     return null;
                 }
-                return value + "";
+                return value;
             } else if ("tinyint".equals(columnType) || "TINYINT".equals(columnType)) {
                 // 整数
                 Object value = resultSet.getObject(index);
                 if (null == value) {
                     return null;
                 }
-                return value + "";
+                return value;
             } else if ("mediumint".equals(columnType) || "MEDIUMINT".equals(columnType)) {
                 // 长整形
                 Object value = resultSet.getObject(index);
                 if (null == value) {
                     return null;
                 }
-                return value + "";
+                return value;
             } else if ("integer".equals(columnType) || "INTEGER".equals(columnType)) {
                 // 整数
                 Object value = resultSet.getObject(index);
                 if (null == value) {
                     return null;
                 }
-                return value + "";
+                return value;
             } else if ("float".equals(columnType) || "FLOAT".equals(columnType)) {
                 // 浮点数
                 Object value = resultSet.getObject(index);
                 if (null == value) {
                     return null;
                 }
-                return value + "";
+                return value;
             } else if ("double".equals(columnType) || "DOUBLE".equals(columnType)) {
                 // 浮点数
                 Object value = resultSet.getObject(index);
                 if (null == value) {
                     return null;
                 }
-                return value + "";
+                return value;
             } else if ("decimal".equals(columnType) || "DECIMAL".equals(columnType)) {
                 // 浮点数-金额类型
                 BigDecimal value = resultSet.getBigDecimal(index);
                 if (null == value) {
                     return null;
                 }
-                return value.toString();
+                return value;
             } else if ("char".equals(columnType) || "CHAR".equals(columnType)) {
                 // 字符串类型
                 String value = resultSet.getString(index);
@@ -527,23 +475,23 @@ public class MysqlDumpUtils {
             } else if ("bit".equals(columnType) || "BIT".equals(columnType)) {
                 // 布尔类型：
                 if (resultSet.getBoolean(index)) {
-                    return "1";
+                    return 1;
                 }
-                return "0";
+                return 0;
             } else if ("bigint unsigned".equals(columnType) || "BIGINT UNSIGNED".equals(columnType)) {
                 // 无符号bigint
                 Object intValue = resultSet.getObject(index);
                 if (null == intValue) {
                     return null;
                 }
-                return intValue + "";
+                return intValue;
             } else if ("int unsigned".equals(columnType) || "INT UNSIGNED".equals(columnType)) {
                 // 无符号整数
-                Object intValue = resultSet.getObject(index);
+                Object intValue = resultSet.getInt(index);
                 if (null == intValue) {
                     return null;
                 }
-                return intValue + "";
+                return intValue;
             } else {
                 return null;
             }
@@ -561,8 +509,8 @@ public class MysqlDumpUtils {
      * @author
      */
     public File beginBack() {
-        try (FileOutputStream fos = new FileOutputStream(bakFile, true)) {
-            String initSql = "SET NAMES utf8mb4;\n" + "SET FOREIGN_KEY_CHECKS = 0;\n" + "use " + BAK_DATABASE + ";";
+        try (FileOutputStream fos = new FileOutputStream(BACK_FILE, true)) {
+            String initSql = "SET NAMES utf8mb4;\n" + "SET FOREIGN_KEY_CHECKS = 0;\n" + "use " + BACK_DATABASE + ";";
             fos.write((initSql).getBytes());
         } catch (FileNotFoundException e) {
             System.err.println("文件打开失败："+ e);
@@ -576,13 +524,11 @@ public class MysqlDumpUtils {
             for (String tableName : tableNames) {
                 bakTableData(tableName);
             }
-            // 统一关闭连接
-            closeConnection(connection);
         } catch (Exception e) {
             System.err.println("该库不存在该表，正常"+e);
         }
 
-        try (FileOutputStream fos = new FileOutputStream(bakFile, true)) {
+        try (FileOutputStream fos = new FileOutputStream(BACK_FILE, true)) {
             String endSql = "\n" + "SET FOREIGN_KEY_CHECKS = 1;";
             fos.write((endSql).getBytes());
         } catch (FileNotFoundException e) {
@@ -590,10 +536,13 @@ public class MysqlDumpUtils {
         } catch (IOException e) {
             System.err.println("结束语句写入失败："+e);
         }
-        return bakFile;
+        return BACK_FILE;
     }
 
     public String escapeJson(String jsonStr) {
+        if (StringUtils.isEmpty(jsonStr)){
+            return null;
+        }
         StringBuilder escapeJsonStr = new StringBuilder();
         for (int i = 0; i < jsonStr.length(); i++) {
             char c = jsonStr.charAt(i);

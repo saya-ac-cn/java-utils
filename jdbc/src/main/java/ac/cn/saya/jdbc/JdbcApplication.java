@@ -19,6 +19,7 @@ public class JdbcApplication {
 		//run.useOrdinaryWriteMysql();
 		//run.useTransactionWriteMysql();
 		//run.useBatchProcessingWriteMysql();
-		run.useBatchProcessingAndTransactionWriteMysql();
+		//run.useBatchProcessingAndTransactionWriteMysql();
+		run.mysqlDump();
 	}
 }
