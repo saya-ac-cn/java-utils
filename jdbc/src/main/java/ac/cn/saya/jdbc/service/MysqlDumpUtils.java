@@ -7,6 +7,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -261,12 +263,8 @@ public class MysqlDumpUtils {
             createTableSql = String.format(
                     "\n\n-- ----------------------------\n-- Table structure for %s\n-- ----------------------------\nDROP TABLE IF EXISTS `%s`;\n%s;\n\n-- ----------------------------\n-- Records of access\n-- ----------------------------\n",
                     tableName, tableName, createTableSql);
-            try (FileOutputStream fos = new FileOutputStream(BACK_FILE, true)) {
-                fos.write((createTableSql).getBytes());
-            } catch (Exception e) {
-                System.err.println("文件写入失败："+e);
-            }
-
+            // 写入表结构
+            writeFileData(createTableSql);
 
             // 获取字段类型
             List<String> columnTypes = getColumnTypes(tableName);
@@ -290,13 +288,10 @@ public class MysqlDumpUtils {
                 // 返回建表语句语句，查询结果的第二列是建表语句，第一列是表名
                 String insertSql = String.format("insert into `%s` (%s) values(%s);", tableName, columnArrayStr,
                         rowValues);
-                insertSql = insertSql.replaceAll("\n", "\\\n");
+                insertSql = insertSql.replace("\n", "\\n");
                 insertSql = insertSql + "\n";
-                try (FileOutputStream fos = new FileOutputStream(BACK_FILE, true)) {
-                    fos.write((insertSql).getBytes());
-                } catch (Exception e) {
-                    System.err.println("文件写入失败："+e);
-                }
+                // 写入数据
+                writeFileData(insertSql);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -509,15 +504,8 @@ public class MysqlDumpUtils {
      * @author
      */
     public File beginBack() {
-        try (FileOutputStream fos = new FileOutputStream(BACK_FILE, true)) {
-            String initSql = "SET NAMES utf8mb4;\n" + "SET FOREIGN_KEY_CHECKS = 0;\n" + "use " + BACK_DATABASE + ";";
-            fos.write((initSql).getBytes());
-        } catch (FileNotFoundException e) {
-            System.err.println("文件打开失败："+ e);
-        } catch (IOException e) {
-            System.err.println("初始化语句写入失败："+e);
-        }
-
+        // 初始化语句写入
+        writeFileData("SET NAMES utf8mb4;\nSET FOREIGN_KEY_CHECKS = 0;\nuse " + BACK_DATABASE + ";");
         try {
             List<String> tableNames = getTableNames();
             tableNames = tableNames.stream().distinct().collect(Collectors.toList());
@@ -527,19 +515,12 @@ public class MysqlDumpUtils {
         } catch (Exception e) {
             System.err.println("该库不存在该表，正常"+e);
         }
-
-        try (FileOutputStream fos = new FileOutputStream(BACK_FILE, true)) {
-            String endSql = "\n" + "SET FOREIGN_KEY_CHECKS = 1;";
-            fos.write((endSql).getBytes());
-        } catch (FileNotFoundException e) {
-            System.err.println("文件打开失败："+e);
-        } catch (IOException e) {
-            System.err.println("结束语句写入失败："+e);
-        }
+        // 写入结束语句
+        writeFileData("\nSET FOREIGN_KEY_CHECKS = 1;");
         return BACK_FILE;
     }
 
-    public String escapeJson(String jsonStr) {
+    private String escapeJson(String jsonStr) {
         if (StringUtils.isEmpty(jsonStr)){
             return null;
         }
@@ -554,6 +535,19 @@ public class MysqlDumpUtils {
             escapeJsonStr.append(c);
         }
         return escapeJsonStr.toString();
+    }
+
+    private void writeFileData(String val){
+        try(FileOutputStream outputStream = new FileOutputStream(BACK_FILE, true); FileChannel channel = outputStream.getChannel()) {
+            ByteBuffer buffer = ByteBuffer.allocate(val.getBytes().length);
+            buffer.put(val.getBytes());
+            //此处必须要调用buffer的flip方法
+            buffer.flip();
+            channel.write(buffer);
+            buffer.clear();
+        }catch (Exception e){
+            System.err.println("文件写入异常:"+e);
+        }
     }
 
 }
