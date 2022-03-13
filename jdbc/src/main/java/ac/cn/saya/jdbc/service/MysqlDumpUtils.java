@@ -475,18 +475,17 @@ public class MysqlDumpUtils {
                 return 0;
             } else if ("bigint unsigned".equals(columnType) || "BIGINT UNSIGNED".equals(columnType)) {
                 // 无符号bigint
-                Object intValue = resultSet.getObject(index);
-                if (null == intValue) {
-                    return null;
-                }
-                return intValue;
+                return resultSet.getObject(index);
             } else if ("int unsigned".equals(columnType) || "INT UNSIGNED".equals(columnType)) {
                 // 无符号整数
-                Object intValue = resultSet.getInt(index);
-                if (null == intValue) {
+                return resultSet.getInt(index);
+            } else if ("json".equals(columnType) || "JSON".equals(columnType)) {
+                // json类型
+                Object value = resultSet.getObject(index);
+                if (null == value) {
                     return null;
                 }
-                return intValue;
+                return escapeJson(value.toString());
             } else {
                 return null;
             }
