@@ -44,10 +44,10 @@ public class IOWriteRank {
     public static void writeByteBuffer(File file) {
         try(FileOutputStream fileOutputStream = new FileOutputStream(file);
             FileChannel channel = fileOutputStream.getChannel();) {
-            int times = 100;
+            int times = 1;//100;
             byte[] bytes = word1038.getBytes();
             final ByteBuffer buffer = ByteBuffer.allocate(times * 1040);
-            int i = 10000;
+            int i = 1;//10000;
             while (i>0){
                 for (int j = 0; j < times; j++) {
                     buffer.put(bytes);
@@ -102,7 +102,7 @@ public class IOWriteRank {
     public static void main(String[] args) {
         long  startTime=System.currentTimeMillis();//开始执行时间
         File file = new File("/Users/saya/project/java/java-utils/io/src/main/resources/write.file");
-        writeMappedByteBuffer(file);
+        writeByteBuffer(file);
         long  endTime=System.currentTimeMillis();//结束执行时间
         System.out.println("耗时："+String.valueOf(endTime-startTime)+"ms");
     }
