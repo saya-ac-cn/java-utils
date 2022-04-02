@@ -126,10 +126,10 @@ public class PullCodeUtil {
         File dir = new File(CODE_DIR + this.MODULE);
         // 判断代码路径下是否有内容，如果有就删除
         if(dir.exists()){
-            FileUtil.del(dir);
+            //FileUtil.del(dir);
         }
 
-        try(Git git = Git.cloneRepository().setURI(gitUrl)
+        try(Git git = Git.cloneRepository().setURI(gitUrl).setBranch(this.BRANCH)
                 .setDirectory(dir).setCredentialsProvider(provider).call()) {
             pullMsg = "检出代码成功 success";
         } catch (org.eclipse.jgit.api.errors.TransportException e){
@@ -149,7 +149,7 @@ public class PullCodeUtil {
             pullMsg = "未找到相应的类文件异常，failed";
             pullFlag = 4;
         }
-        log.warn(pullMsg,"--code--",pullFlag);
+        System.out.println(pullMsg+"--code--"+pullFlag);
         return pullFlag;
     }
     /**
@@ -162,7 +162,7 @@ public class PullCodeUtil {
 
         if ("master".equals(this.BRANCH)) {
             checkoutMsg = "Check out code OK. ->" + this.BRANCH;
-            log.warn(checkoutMsg,"--code--",checkoutFlag);
+            System.out.println(checkoutMsg+"--code--"+checkoutFlag);
             return checkoutFlag;
         }
         try(Git git = Git.open( new File(this.GIT_CONFIG) )) {
@@ -170,7 +170,7 @@ public class PullCodeUtil {
             List<Ref> branchList = git.branchList().setListMode(ListBranchCommand.ListMode.ALL).call();
             for (Ref ref : branchList){
                 if (this.BRANCH.equals(ref.getName())) {
-                    log.warn("代码分支列表中存在给定分支");
+                    System.out.println("代码分支列表中存在给定分支");
                 }
             }
             git.checkout().setName("origin/" + this.BRANCH).setForce(true).call();
@@ -180,7 +180,7 @@ public class PullCodeUtil {
             checkoutMsg = "检出分支代码 failed ! ->" + this.BRANCH;
             checkoutFlag = 6;
         }
-        log.warn(checkoutMsg +"--code--"+ checkoutFlag);
+        System.out.println(checkoutMsg +"--code--"+ checkoutFlag);
         return checkoutFlag;
     }
 
@@ -193,7 +193,7 @@ public class PullCodeUtil {
         int checkoutFlag = 0;
         if (this.REVISION == null || this.REVISION.length() == 0) {
             checkoutMsg = "Check out code OK. ->" + this.REVISION;
-            log.warn(checkoutMsg,"--code--",checkoutFlag);
+            System.out.println(checkoutMsg+"--code--"+checkoutFlag);
             return checkoutFlag;
         }
         try(Git git = Git.open( new File(this.GIT_CONFIG) )) {
@@ -204,7 +204,7 @@ public class PullCodeUtil {
             checkoutMsg = "检出代码版本 failed ! ->" + this.REVISION;
             checkoutFlag = 8;
         }
-        log.warn(checkoutMsg,"--code--",checkoutFlag);
+        System.out.println(checkoutMsg+"--code--"+checkoutFlag);
         return checkoutFlag;
     }
 }
