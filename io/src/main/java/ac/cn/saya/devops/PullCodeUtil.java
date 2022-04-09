@@ -126,7 +126,7 @@ public class PullCodeUtil {
         File dir = new File(CODE_DIR + this.MODULE);
         // 判断代码路径下是否有内容，如果有就删除
         if(dir.exists()){
-            //FileUtil.del(dir);
+            deleteFolder(dir);
         }
 
         try(Git git = Git.cloneRepository().setURI(gitUrl).setBranch(this.BRANCH)
@@ -206,5 +206,23 @@ public class PullCodeUtil {
         }
         System.out.println(checkoutMsg+"--code--"+checkoutFlag);
         return checkoutFlag;
+    }
+
+    @SuppressWarnings({"all"})
+    private void deleteFolder(File file) {
+        try {
+            if (file.isFile() || file.list().length == 0) {
+                file.delete();
+            } else {
+                File[] files = file.listFiles();
+                for (File getFile : files) {
+                    deleteFolder(getFile);
+                    getFile.delete();
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("文件或目录("+file.getAbsoluteFile()+")删除异常："+e);
+        }
+
     }
 }
