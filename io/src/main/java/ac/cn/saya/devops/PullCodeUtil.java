@@ -1,11 +1,20 @@
 package ac.cn.saya.devops;
 import java.io.File;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
+import org.eclipse.jgit.api.CommitCommand;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.ListBranchCommand;
+import org.eclipse.jgit.api.PushCommand;
 import org.eclipse.jgit.api.errors.GitAPIException;
+import org.eclipse.jgit.api.errors.TransportException;
 import org.eclipse.jgit.lib.Ref;
+import org.eclipse.jgit.lib.StoredConfig;
+import org.eclipse.jgit.transport.CredentialsProvider;
+import org.eclipse.jgit.transport.PushResult;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 
 /**
@@ -207,6 +216,51 @@ public class PullCodeUtil {
         System.out.println(checkoutMsg+"--code--"+checkoutFlag);
         return checkoutFlag;
     }
+
+    public void createGitProject(String projectName) throws Exception {
+        // 创建的项目路径
+        String gitUrl = "https://git.uino.com/kuaijian/chengdu/team0/demo/"+projectName+".git";
+        // 本地项目的地址
+        File projectFile = new File("/uino/code/"+projectName);
+        // 授权认证信息
+        CredentialsProvider provider = new UsernamePasswordCredentialsProvider(this.USER, this.PASS);
+        Git git = Git.init().setDirectory(projectFile).setDirectory(projectFile).call();
+        StoredConfig gitConfig = git.getRepository().getConfig();
+        gitConfig.setString("remote", "origin", "url", gitUrl);
+        gitConfig.save();
+        // add
+        git.add().addFilepattern(".").call();
+        // commit
+        CommitCommand commitCommand = git.commit();
+        commitCommand.setCommitter("组件库","dev@uino.com").setMessage("由脚手架自动初始化项目").call();
+        // push
+        PushCommand pushCommand = git.push();
+        pushCommand.setCredentialsProvider(provider).setForce(true).setPushAll();
+        Iterator<PushResult> iterator = pushCommand.call().iterator();
+        if (iterator.hasNext()) {
+            System.out.println(iterator.next().toString());
+        }
+    }
+
+    public Collection<Ref> queryGitLog(String url){
+        // 授权认证信息
+        CredentialsProvider provider = new UsernamePasswordCredentialsProvider(this.USER, this.PASS);
+        try{
+            Collection<Ref> refs = Git.lsRemoteRepository()
+                    .setHeads(true)
+                    .setTags(true)
+                    .setRemote(url)
+                    .setCredentialsProvider(provider)
+                    .call();
+            return refs;
+        }catch(TransportException e) {
+            System.err.println("No remote repository configured for the current branch.");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return Collections.EMPTY_LIST;
+    }
+
 
     @SuppressWarnings({"all"})
     private void deleteFolder(File file) {
