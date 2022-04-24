@@ -27,7 +27,7 @@ import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
  * @Description:
  */
 
-public class PullCodeUtil {
+public class GitCodeUtil {
 
     public static void test(String[] args) {
 //        String baseUrl = "https://git.uino.com/kuaijian/chengdu/base/manager/";
@@ -109,7 +109,7 @@ public class PullCodeUtil {
      */
     private final String GIT_CONFIG;
 
-    public PullCodeUtil(String module, String user, String pass, String branch, String revision,String codeDir){
+    public GitCodeUtil(String module, String user, String pass, String branch, String revision, String codeDir){
         this.MODULE = module;
         this.USER = user;
         this.PASS = pass;
