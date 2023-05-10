@@ -1,9 +1,7 @@
-package ac.cn.saya.juc.list;
+package ac.cn.saya.juc.collection;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
  * @Title: ContainerNotSafeUtilTest1

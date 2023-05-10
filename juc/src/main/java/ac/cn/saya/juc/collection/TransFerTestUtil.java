@@ -1,4 +1,4 @@
-package ac.cn.saya.juc.list;
+package ac.cn.saya.juc.collection;
 
 /**
  * @Title: TransFerTestUtil
